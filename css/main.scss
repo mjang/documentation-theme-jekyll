@@ -1,0 +1,75 @@
+---
+layout: null
+sitemap: false
+---
+
+//ForgeRock Saas
+$blue: #2C9EE0;
+$blue-medium: #004B9B;
+$blue-dark: #455369;
+$blue-darker: #314054;
+
+$green: #2CA664;
+$teal: #02B2B2;
+$purple: #6f42c1;
+
+
+$indigo: #6610f2;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #868e96;
+$gray-dark: #343a40;
+$gray-light: #F6F8FA;
+
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
+$font-family-sans-serif: Roboto, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI","Helvetica Neue",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$font-family-monospace: "SFMono-Regular",Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+
+$primary: $blue;
+$secondary: $green;
+$accent: $purple;
+
+$forgerock-brand-color: #000;
+$forgerock-nav-background-color: #FAFAFA;
+
+//ForgeRock Saas - END
+//************************************************************
+
+$body-background-color: #F6F8FA;
+
+$content-max-width: 800px;
+$content-color: #222;
+$content-background-color: #fff;
+
+$brand-colour: $forgerock-brand-color;
+$brand-colour-light: mix($brand-colour, $content-background-color, 10%);
+
+$nav-header-background-color: $brand-colour;
+$nav-header-height: 60px;
+$nav-background-color: $forgerock-nav-background-color;
+$nav-width: 300px;
+
+$space: 20px;
+
+$mobile-break: 700px;
+$full-width-break: $nav-width + ($space * 4) + $content-max-width;
+
+
+
+@import "mixins";
+@import "normalize";
+@import "pygments";
+@import "typography";
+@import "code";
+@import "tables";
+@import "layout";
+@import "forgerock";

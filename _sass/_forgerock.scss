@@ -1,0 +1,196 @@
+
+//Fix header for mobile
+@media (max-width: $mobile-break) {
+  .page-header {
+      margin: 120px auto 0 auto;
+  }
+
+  .header-btns{
+    display: none
+  }
+}
+
+//Page Setup ---------
+body, body::before,.content {
+  background-color: $body-background-color;
+}
+
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+}
+
+//Sticky Footer ---------
+.main {
+  min-height: calc(100vh - 214px);
+}
+.footer {
+  height: 160px;
+}
+
+
+
+//Utilities ---------
+.float-left {
+    float: left!important;
+}
+.float-right {
+    float: right!important;
+}
+
+//Search ---------
+body #search-input, body::after {
+    box-shadow: inset -10px 0 5px -10px rgba(0, 0, 0, 0.1);
+}
+
+#search-input:focus {
+    outline: none;
+    border-left-color: $primary;
+}
+
+//Headers ---------
+hr, .content h3::before {
+    border-top: #E7E8E9 1px solid;
+}
+
+.page-header > h3 {
+  color: $blue-dark;
+}
+
+header h1 {
+    height: 80px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: normal;
+    text-transform:capitalize;
+    background-color: #202223;
+}
+
+//Footer ---------
+footer {
+    background: $blue-darker;
+    color: #fff;
+    padding: 20px 0;
+    display: block;
+
+    ul {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+        text-align: center;
+    }
+
+    ul li {
+      display: inline-block;
+      padding:5px;
+    }
+
+    p, p a{
+        color: #cccccc;
+        margin: 0;
+        text-align: center;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    p a:hover {
+      color: #fff
+    }
+}
+
+
+
+//Blockquotes ---------
+blockquote {
+    background-color: #fff;
+    border-color: $primary;
+    border-radius: 3px;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
+    padding: 15px 15px;
+}
+
+blockquote.plain-blockquote {
+  border-color: #fff;
+}
+
+//center content in block
+blockquote.center-text p {
+  text-align: center;
+}
+
+blockquote a.important {
+  color: $blue-medium;
+  text-decoration: none;
+  font-family: $font-family-sans-serif;
+  font-size: 0.8em;
+}
+
+
+
+//Icons
+.octicon.octicon-mark-github{
+    fill: #004B9B;
+    height: 15px;
+}
+
+.btn .material-icons{
+  font-size:20px;
+  line-height: 1.2;
+}
+
+
+//Buttons ---------
+.btn-primary {
+    color: #fff;
+    background-color: $primary;
+    border-color: #007bff;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: $secondary;
+    border-color: #007bff;
+}
+
+.btn-accent {
+    color: #fff;
+    background-color: $accent;
+    border-color: #007bff;
+}
+
+.btn-transparent {
+    color: #000;
+    background-color: transparent;
+}
+
+.btn i.material-icons{
+  float: left;
+  padding-right: 5px;
+}
+
+//main setup for all buttons
+.btn {
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 1.5rem 1.5rem;
+    font-size: 1.3rem;
+    line-height: 2;
+    border-radius: .25rem;
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+		font-family: $font-family-sans-serif;
+		letter-spacing: 0.2rem;
+}
