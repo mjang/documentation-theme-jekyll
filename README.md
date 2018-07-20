@@ -1,6 +1,6 @@
 # ForgeRock EA Documentation
 
-This is the Early Access developer docs site for the ForgeRock Idenity Cloud.
+This is the Early Access developer docs site for the ForgeRock Idenity Cloud. Site: https://forgecloud.github.io/
 
 
 ## Setup
@@ -28,6 +28,7 @@ $ bundle exec jekyll serve
 
 * Add, update or remove a documentation page in the *Documentation* collection.
 * Change the category of a documentation page to move it to another section in the navigation.
+* /samples folder contains some examples of urls, links and formatting
 * Documentation pages are organized in the navigation by category, with URLs based on the path inside the `_docs` folder.
 
 ### Change log
@@ -43,6 +44,7 @@ $ bundle exec jekyll serve
 
 * Change `site.show_full_navigation` to control all or only the current navigation group being open.
 * Sort order of navigation top level groups is determined by `category-order` on the sub-pages
+* Add `excluded_in_navigation: true` to any documentation page's front matter to exclude that category in the navigation - see example on 'samples' page.
 
 ### CSS
 * ForgeRock styles are layered on top of the base template. You can update variables in `css\main.scss` and add styles in `_sass\forgerock.scss`. Do not edit any of the underlying styles directly.

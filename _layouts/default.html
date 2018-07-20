@@ -58,12 +58,17 @@
 						<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
 							
 							{% assign items = group.items | sort: 'order' %}
-							<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
-							<ul>
-								{% for item in items %}
-									<li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
-								{% endfor %}
-							</ul>
+
+							{% if items.first.excluded_in_navigation != true %}
+								<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
+								<ul>
+									{% for item in items %}
+										<li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+									{% endfor %}
+								</ul>
+								{% endif %}
+						
+
 						</li>
 					{% endfor %}
 				</ul>
@@ -129,7 +134,7 @@
 
 		</ul>
 		<p> Contact | Forums | Blog | Support</p>
-		<p class="copyright">© <a target="_blank" href="https://forgerock.com">ForgeRock</a> 2017. All rights reserved.</p>
+		<p class="copyright">© <a target="_blank" href="https://forgerock.com">ForgeRock</a> 2018. All rights reserved.</p>
 	</div>
 </footer>
 <!-- Footer End -->
