@@ -40,16 +40,39 @@ body, body::before,.content {
 .float-right {
     float: right!important;
 }
+.center-img
+{
+    margin: 0 auto;
+    display: block;
+}
+
+
+.content p.center{
+	text-align: center;
+}
+
 
 //Search ---------
-body #search-input, body::after {
-    box-shadow: inset -10px 0 5px -10px rgba(0, 0, 0, 0.1);
-}
 
 #search-input:focus {
     outline: none;
     border-left-color: $primary;
 }
+
+#search-input.in-page-content:focus  {
+    outline: none;
+    border-color: $primary;
+}
+
+body #search-input, body::after {
+    box-shadow: inset -10px 0 5px -10px rgba(0, 0, 0, 0.1);
+}
+
+body #search-input.in-page-content {
+    border: solid #ccc
+}
+
+
 
 //Headers ---------
 hr, .content h3::before {

@@ -10,6 +10,7 @@ ChatApp introduces media support! Send images, videos and documents to your cont
 * Image support
 * Video support
 * Document support
+* laaa da
 
 **Fixes:**
 

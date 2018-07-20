@@ -32,6 +32,10 @@ By using ForgeRock cloud for authentication you can just get on with making a gr
 
 ![](//placehold.it/800x300)
 
+
+
+![]({{ site.baseurl }}/images/404.png)
+
 #### Here's some example code formatted as javascript...
 
 ```
