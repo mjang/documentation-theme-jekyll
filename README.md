@@ -1,6 +1,6 @@
-# ForgeRock Documentation Site
+# ForgeRock EA Documentation
 
-This is the Documentation site for the ForgeRock cloud.
+This is the Early Access developer docs site for the ForgeRock Idenity Cloud.
 
 
 ## Setup
@@ -54,12 +54,12 @@ $ bundle exec jekyll serve
 ## To Do
 
 - Fix site icon and touch-icon
-- Design 404 page (remove chicken)
+- Design 404 page
 - Consider breaking out forgerock variables from main.scss
 - RSS feed integration for release info
 - Integrate videos
 - Integrate tests
 - Create prod & staging sites
-- Fix google analytics - check what we have
+- Fix google analytics
 - Set up contact email lists
-- Can set up multiple doc sites with Jekyll - investigate other ForgeRock docs.
+- Can set up multiple doc sites

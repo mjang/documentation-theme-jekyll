@@ -1,15 +1,15 @@
 # ----
 # Site
 
-title: ForgeRock Documentation
-url: "https://github.com/katkinso/forgerock-docs"
+title: ForgeRock Early Access Docs
+url: "https://forgecloud.github.io/"
 baseurl:
 google_analytics_key:
 show_full_navigation: false #toggle to show all nav groups or only active group
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Product documentation for ForgeRock cloud platform.
+description: EA Developer documentation for ForgeRock Idenity cloud platform.
 author:
   name:
   email:
@@ -17,7 +17,7 @@ author:
 social:
   name: ForgeRock Docs
   links:
-    - https://github.com/katkinso/forgerock-docs
+    - https://github.com/ForgeCloud/forgecloud.github.io
 
 # -----
 # Build

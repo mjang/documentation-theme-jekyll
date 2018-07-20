@@ -3,13 +3,25 @@ title: Getting Started
 ---
 
 
-### What is ForgeRock IDX?
+### What is the ForgeRock Identity Cloud?
 
 <!-- <img src="{{ site.baseurl }}/images/sample-people.png" alt="" class="float-right"> -->
 
-ForgeRock IDX is a cloud-based identity and authentication service that allows you to quickly integrate authentication and identity management your applications.
+The ForgeRock Identity Cloud is a cloud-based identity and access management service that allows developers to quickly integrate authentication and identity management into their applications.
 
-By using ForgeRock cloud for authentication you can just get on with making a great app for your business. We'll take care of securing signup, login and related meta data.
+By using ForgeRock cloud for authentication you can just get on with making a great app for your business. We'll take care of securing signup, login and related identity meta data.
+
+### What can you do?
+
+- Register users for your service
+- Authenticate users into your app
+- Manage password policys
+- Use external IDP's like Facebook or Twitter to sign people into your app
+- Collect relevant meta data on users
+- Set up and track Terms & Conditions and Privacy Policies 
+- Ingest and extract data out of the system in multiple ways
+- View analytics dashboards and detect anomalous behavior
+
 
 #### Here's how it works...
 
@@ -28,14 +40,7 @@ app.get('/', (req,res) =>{
 {: .language-javascript}
 
 
-### ForgeRock IDX allows you to...
 
-- Sign people into your app using username and password
-- Sign people into your app using a social provider like Facebook or Twitter
-- Collect relevant mete data on your users so you can better serve content and services to them
-- Set up and track Terms & Conditions and Privacy Policies to help you be GDPR compliant
-- Send data to other systems for media measurement and analytics
-- View analytics dashboards and detect anomalous behavior
 
 <button type="button" class="btn btn-primary"><i class="material-icons">create</i> sign up!</button>
 

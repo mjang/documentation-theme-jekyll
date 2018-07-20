@@ -1,5 +1,6 @@
 ---
-title:
-category:
+title: 
+home: asdas
+category: 
 order: 1
 ---
