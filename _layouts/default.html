@@ -48,7 +48,7 @@
 					<li class="nav-item top-level {% if page.url == '/' %}  current {% endif %}">
 						{% assign home = site.html_pages | where: 'url', '/' | first %}
 						<!-- <a href="{{ site.baseurl }}/">{{ home.title }}</a> -->
-						<a href="{{ site.baseurl }}/">Getting Started</a>
+						<a href="{{ site.baseurl }}/">Early Access Program</a>
 					</li>
 				</ul>
 
@@ -116,24 +116,30 @@
 		<p class="edit-footer">
 		<ul class="footer-links">
 
-			<li><a target="_blank" href="https://facebook.com/" class="Facebook-icon">
+			<li><a target="_blank" href="https://www.facebook.com/ForgeRockIdentity/" class="Facebook-icon">
 				<img src="{{ site.baseurl }}/images/facebook.svg" width="24" height="24" alt="facebook" >
 			</a></li>
 
-			<li><a target="_blank" href="https://twitter.com/" class="Twitter-icon">
+			<li><a target="_blank" href="https://twitter.com/ForgeRock" class="Twitter-icon">
 				<img src="{{ site.baseurl }}/images/twitter.svg" width="24" height="24" alt="twitter" >
 			</a></li>
 
-			<li><a target="_blank" href="https://youtube.com/" class="YouTube-icon">
+			<!-- <li><a target="_blank" href="https://youtube.com/" class="YouTube-icon">
 				<img src="{{ site.baseurl }}/images/youtube.svg" width="24" height="24" alt="youtube" >
-			</a></li>
+			</a></li> -->
 
 			<li><a href="/feed.xml" class="RSS-icon">
 				<img src="{{ site.baseurl }}/images/feed.svg" width="24" height="24" alt="rss feed" >
 			</a></li>
 
 		</ul>
-		<p> Contact | Forums | Blog | Support</p>
+		<!-- <p> Contact | Forums | Blog | Support</p> -->
+
+		<p> 
+			<a href="mailto:ea.cloud@forgerock.com">Contact us</a> | 
+			<a target="_blank" href="#">Login</a> 
+		</p>
+
 		<p class="copyright">© <a target="_blank" href="https://forgerock.com">ForgeRock</a> 2018. All rights reserved.</p>
 	</div>
 </footer>

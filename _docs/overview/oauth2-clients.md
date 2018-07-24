@@ -1,7 +1,6 @@
 ---
-title: Control Panel
+title: Application Types
 category: Overview
-category-order: 1
 order: 2
 ---
 
@@ -14,5 +13,3 @@ justo vel enim aliquet:
 3. Sed dapibus et ex sit amet
 
 > **QUICK TIP:** Nullam a mollis quam, sed hendrerit nulla
-
-![](//placehold.it/800x600)
