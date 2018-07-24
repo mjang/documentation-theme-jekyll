@@ -23,12 +23,12 @@ $ bundle exec jekyll serve
 
 * Learn Jekyll with step-by-step tutorials and videos at [Jekyll Tips](http://jekyll.tips/).
 * Jekyll cheat sheet [Jekyll Cheat Sheet](https://learn.cloudcannon.com/jekyll-cheat-sheet/).
+* http://127.0.0.1:4000/samples/sample-page/ folder contains some examples of urls, links and formatting
 
 ### Documentation pages
 
 * Add, update or remove a documentation page in the *Documentation* collection.
 * Change the category of a documentation page to move it to another section in the navigation.
-* /samples folder contains some examples of urls, links and formatting
 * Documentation pages are organized in the navigation by category, with URLs based on the path inside the `_docs` folder.
 
 ### Change log
