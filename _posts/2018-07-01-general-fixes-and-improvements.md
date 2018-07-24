@@ -8,7 +8,6 @@ This release fixes a few minor issues reported by users. We've also made a few q
 **Features:**
 
 * Streamlined access to contact details
-* Better sort order for archived messages
 
 **Fixes:**
 
