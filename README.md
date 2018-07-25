@@ -1,6 +1,8 @@
 # ForgeRock EA Documentation
 
-This is the Early Access developer docs site for the ForgeRock Idenity Cloud. Site: https://forgecloud.github.io/
+https://forgecloud.github.io/
+
+This is the Early Access developer docs site for the ForgeRock Identity Cloud. This project uses Jekyll to generate HTML files from markdown. 
 
 
 ## Setup
@@ -35,6 +37,7 @@ $ bundle exec jekyll serve
 
 * Add, update or remove change log entries from your posts.
 * Tag entries as minor or major in the front matter.
+* Adding items to the changelog will automatically generate the xml file for the RSS feed.
 
 ### Search
 
@@ -56,12 +59,5 @@ $ bundle exec jekyll serve
 ## To Do
 
 - Fix site icon and touch-icon
-- Design 404 page
 - Consider breaking out forgerock variables from main.scss
-- RSS feed integration for release info
-- Integrate videos
-- Integrate tests
-- Create prod & staging sites
 - Fix google analytics
-- Set up contact email lists
-- Can set up multiple doc sites
