@@ -6,7 +6,7 @@ order: 1
 ---
 
 
-There are two main API's for the forgeRock Identity Cloud: the Authentication API and the Management API. 
+There are two main API's for the ForgeRock Identity Cloud: the Authentication API and the Management API. 
 
 ##### Authentication API
 This allows you to authenticate users to gain access to your applications or assign to access the Management API. You can use this API if you want to build authentication into your apps without using the hosted login pages. 
@@ -21,3 +21,5 @@ The Management API allows you to manage users and other objects in the system. T
 [Explore the Management API](http://github.com)
 
 <button type="button" class="btn btn-secondary"><i class="material-icons">file_download</i> DOWNLOAD POSTMAN COLLECTION</button>
+
+
