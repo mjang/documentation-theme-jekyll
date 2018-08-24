@@ -3,13 +3,26 @@ title: Early Access Program
 ---
 
 
-The ForgeRock Identity Cloud is an identity and access management service allowing developers to easily integrate authentication and identity management into their customer facing applications.
+### Welcome to the ForgeRock Identity Cloud Early Access Program! 
 
-As part of the early access program you'll have the ability to help drive new features and functionality in the platform.
+
+The ForgeRock Identity Cloud is an identity and access management service allowing developers to quickly and easily integrate authentication and identity management into their applications. 
+
+We're working hard to build out the right features and collect early feedback from customers so we can integrate it into the system. 
+
+Here's what to expect...
+
+- You'll be able to directly influence features and product direction.
 
 - You'll have direct access to product and engineering.
 
-- A way to provide direct feedback from within the app.
+- You'll be able to provide direct feedback from within the app.
+
+
+### Some things to note...
+
+<br>
+
 
 - We'll strive to keep documentation updated, but you can expect unannounced breaking changes as we develop quickly.
 
@@ -17,24 +30,16 @@ As part of the early access program you'll have the ability to help drive new fe
 
 - You'll encounter bugs and there will be reliability and stability hiccups.
 
+- The EA site is not meant to be used in production, but is for you to kick the tires and tell us what you think we did right (or more likely what we did wrong)
+
 - Keep up to date with [the latest changes]({{ site.baseurl }}/changelog/).
-
-
-### What the platfom allows you to do
-
-- Register applications
-- Register & autheticate users
-- Manage password policy
-- Manage users
-- Use external IDP's like Facebook or Twitter to sign people into your app
-- Collect relevant meta data on users
-- Set up and track Terms & Conditions and Privacy Policies 
-- Ingest and extract data out of the system in multiple ways
-- View analytics on apps and users
 
 <br>
 
-> Have questions or feedback? Send us a message at [ea.cloud@forgerock.com](mailto:ea.cloud@forgerock.com)
+
+> <p class="center"><br><a href="#" class="btn btn-secondary"><i class="material-icons">airport_shuttle</i>get started</a></p>
+Have questions or feedback? Send us a message at [ea.cloud@forgerock.com](mailto:ea.cloud@forgerock.com)
+{: .plain-blockquote}
 
 
 <br>

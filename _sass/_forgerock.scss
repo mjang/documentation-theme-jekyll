@@ -204,8 +204,9 @@ blockquote a.important {
 //main setup for all buttons
 .btn {
     text-transform: uppercase;
+    text-decoration: none;
     display: inline-block;
-    font-weight: 400;
+    font-weight: bold;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -222,6 +223,11 @@ blockquote a.important {
 		font-family: $font-family-sans-serif;
 		letter-spacing: 0.2rem;
 }
+
+.btn:hover {
+    color: #fff;
+}
+
 
 // Table
 
