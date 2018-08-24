@@ -80,7 +80,7 @@ body #search-input.in-page-content {
 
 
 //Headers ---------
-hr, .content h3::before {
+.hr {
     border-top: #E7E8E9 1px solid;
 }
 
@@ -164,6 +164,17 @@ blockquote a.important {
 .octicon.octicon-mark-github{
     fill: #004B9B;
     height: 15px;
+}
+
+// .octicon.octicon-mark-github{
+//     fill: #ffffff;
+//     height: 128;
+//     width: 80;
+// }
+
+a .octicon.octicon-mark-github{
+    fill: #ffffff;
+    padding-right:8px;
 }
 
 .btn .material-icons{

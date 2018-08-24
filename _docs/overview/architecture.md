@@ -1,6 +1,6 @@
 ---
 title: Architecture
-category: Overview
+category: Getting Started
 category-order: 1
 order: 1
 ---
