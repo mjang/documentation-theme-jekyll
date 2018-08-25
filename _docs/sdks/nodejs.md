@@ -8,13 +8,13 @@ order: 1
 
 > **Sample App** <br>
 > To get started pull the sample app from Github and follow the instructions in the github repo. <br><br>
-> <a href="https://github.com/ForgeCloud/app-sdk" class="btn btn-secondary">{% octicon mark-github" %}Clone from Github</a>
+> <a href="https://github.com/ForgeCloud/app-sdk" target="_blank" class="btn btn-secondary">{% octicon mark-github" %}Clone from Github</a>
 {: .plain-blockquote}
 
 <br/>
 
 #### Running the Sample App  
-The node sample app will use the OAuth 2.0 confidential client flow (web app). An Authorization Code is exchanged for a token. Your app must be able to securely store and transmit information. Check out the section on [client types](#) to lean more about which authorization flow to use.
+The node sample app will use the OAuth 2.0 confidential client flow (web app). An Authorization Code is exchanged for a token. Your app must be able to securely store and transmit information. Check out the section on [app types]({{ site.baseurl }}/overview/app-integration/) to lean more about authorization flows.
 
 #### Steps
 

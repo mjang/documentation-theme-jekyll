@@ -37,7 +37,7 @@ Here's what to expect...
 <br>
 
 
-> <p class="center"><br><a href="#" class="btn btn-secondary"><i class="material-icons">airport_shuttle</i>get started</a></p>
+> <p class="center"><br><a href="{{ site.baseurl }}/overview/get-started/" class="btn btn-secondary"><i class="material-icons">airport_shuttle</i>get started</a></p>
 Have questions or feedback? Send us a message at [ea.cloud@forgerock.com](mailto:ea.cloud@forgerock.com)
 {: .plain-blockquote}
 

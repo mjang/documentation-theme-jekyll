@@ -1,10 +1,8 @@
 ---
-title: Getting Started 
+title: Applications 
 category: Getting Started
 order: 2
 ---
-
-### Authentication & Authorization
 
 How you integrate authentication and authorization into your application depends on the kind of app you have and how users interact with it. ForgeRock uses OAuth 2.0 to authorize access to protected resources and OpenID Connect to provide an identity layer on top of the OAuth 2.0 protocol.
 
@@ -27,7 +25,6 @@ Grant Types
 - Implicit Grant
 - Resource Owner Password Credentials Grant
 
-<br>
 
 ### Web App
 
@@ -45,8 +42,8 @@ An example of this type of app might be an eCommerce site built in node.js where
 With this type of app you can use the **Refresh** token grant to obtain a new access token without involving the user. To do this the app would make an additional call to obtain a new token when the authorization server responds with an invalid token error.
 
 <p class="center"><br><a href="{{ site.baseurl }}/sdks/nodejs/" class="btn btn-secondary"><i class="material-icons">build</i> WEB APP SDK</a></p>
-<br>
-{: .hr}
+
+---
 
 
 #### Machine 2 Machine App
@@ -59,8 +56,7 @@ An example might be a server script that is granted access to an API providing i
 1. The application makes an authorization request to the authorization server by providing the client credentials
 2. The authorization server responds with an access token & access token expiration time
 
-<br>
-{: .hr}
+---
 
 #### Client Side App
 The code of this app type runs completely in the browser. If you can avoid using this type of application for authorizing access to resources then you should as there is no way to secure the token. 
@@ -76,8 +72,7 @@ Note: You cannot use refresh tokens for long-lived access with this app type.
 
 *This type of app is not yet supported*
 
-<br>
-{: .hr}
+---
 
 #### Native App
 This app very similar to the client-side application as the credentials are not trusted to be kept confidential. With this flow it is recommended to use the PKCE extension. This involves the app generating an arbitrary code and using that when exchanging the the authorization code for a secret. By doing this if the auth code is intercepted then it cannot be used without the arbitrary code.
@@ -86,10 +81,7 @@ This app very similar to the client-side application as the credentials are not 
 
 *This type of app is not yet supported*
 
-<br>
-{: .hr}
-
-
+---
 
 
 #### Learn more about the OAuth 2.0 Flows
