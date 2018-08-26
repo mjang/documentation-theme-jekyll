@@ -1,16 +1,24 @@
 ---
-title: Early Access Program
+title: About Early Access
 ---
 
 
-### Welcome to the ForgeRock Identity Cloud Early Access Program! 
+## Welcome! 
 
 
 The ForgeRock Identity Cloud is an identity and access management service allowing developers to quickly and easily integrate authentication and identity management into their applications. 
 
-We're working hard to build out the right features and collect early feedback from customers so we can integrate it into the system. 
+Some stuff you can do:
+- Register and authenticate users into your applications.
+- Set password policies, reset passwords and send users though forgot password flows.
+- Create users via the admin console or management API's.
+- Set up and configure hosted login and registration pages.
 
-Here's what to expect...
+This is just the starting set of features - we're working hard to build out the right functionality by collecting early feedback from customers. **This is where you come in!**
+
+### What to expect...
+
+<br>
 
 - You'll be able to directly influence features and product direction.
 
@@ -19,27 +27,29 @@ Here's what to expect...
 - You'll be able to provide direct feedback from within the app.
 
 
-### Some things to note...
+### Things to note...
 
 <br>
 
 
 - We'll strive to keep documentation updated, but you can expect unannounced breaking changes as we develop quickly.
 
-- We may stop or pause access to the Early Access releases at any point.
+- We may stop or pause access to the Early Access at any point.
 
 - You'll encounter bugs and there will be reliability and stability hiccups.
 
-- The EA site is not meant to be used in production, but is for you to kick the tires and tell us what you think we did right (or more likely what we did wrong)
+- The EA site is not meant to be used in production, but is for you to kick the tires and tell us what you think we did right (or more likely what we did wrong).
 
-- Keep up to date with [the latest changes]({{ site.baseurl }}/changelog/).
+- You can keep up to date with the latest changes on the [changelog]({{ site.baseurl }}/changelog/) page. You'll also be able to opt-in to receive release emails.
 
 <br>
 
+> Now you know what it's all about let's get going! Don't be shy about feedback - the more we hear from you about what works and what doesn't the better the features you care about will be.
+> <p class="center"><a href="{{ site.baseurl }}/overview/get-started/" class="btn btn-secondary"><i class="material-icons">build</i>quick start</a></p><br>
 
-> <p class="center"><br><a href="{{ site.baseurl }}/overview/get-started/" class="btn btn-secondary"><i class="material-icons">airport_shuttle</i>get started</a></p>
+
+
+<br>
 Have questions or feedback? Send us a message at [ea.cloud@forgerock.com](mailto:ea.cloud@forgerock.com)
-{: .plain-blockquote}
-
 
 <br>

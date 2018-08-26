@@ -5,13 +5,13 @@ order: 1
 ---
 
 
-#### Use Case: Registration and Authentication
+#### Registration and Authentication
 
 You run an eCommerce site and you want to ask customers to register and login to your site so they can shop for goods.
 
 ![]({{ site.baseurl }}/images/login.png)
 
-1. To get started [set up a web app]({{ site.baseurl }}/sdks/nodejs) using the node.js SDK.
+1. To get started follow the instructions on [setting up a web app]({{ site.baseurl }}/sdks/nodejs) using the node.js SDK.
 
 1. In the admin console try adjusting the hosted pages by adding your own logo to see how you can configure the registration and login experience. 
 
