@@ -39,6 +39,8 @@ This is just the starting set of features - we're working hard to build out the 
 
 - The EA site is not meant to be used in production, but is for you to kick the tires and tell us what you think we did right (or more likely what we did wrong).
 
+- You should not put any real customer data into the system. 
+
 - You can keep up to date with the latest changes on the [changelog]({{ site.baseurl }}/changelog/) page. You'll also be able to opt-in to receive release emails.
 
 <br>
