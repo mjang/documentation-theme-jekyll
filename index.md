@@ -12,12 +12,12 @@ Some stuff you can do...
 - Register and authenticate users into your applications.
 - Set up and configure hosted login and registration pages.
 - Set password policy.
-- Reset passwords and send users though forgot password flows.
+- Reset passwords and send users through forgot password flows.
 - Create users via the admin console or management API's.
 
 This is just the starting set of features - we're working hard to build out the right functionality by collecting early feedback from customers. **This is where you come in!**
 
-### What to expect...
+### What to expect
 
 
 - You'll be able to directly influence features and product direction.
@@ -27,7 +27,8 @@ This is just the starting set of features - we're working hard to build out the 
 - You'll be able to provide direct feedback from within the app.
 
 
-### Things to note...
+
+### Things to note
 
 
 - We'll strive to keep documentation updated, but you can expect unannounced breaking changes as we develop quickly.
