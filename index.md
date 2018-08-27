@@ -8,17 +8,17 @@ title: About Early Access
 
 The ForgeRock Identity Cloud is an identity and access management service allowing developers to quickly and easily integrate authentication and identity management into their applications. 
 
-Some stuff you can do:
+Some stuff you can do...
 - Register and authenticate users into your applications.
-- Set password policies, reset passwords and send users though forgot password flows.
-- Create users via the admin console or management API's.
 - Set up and configure hosted login and registration pages.
+- Set password policy.
+- Reset passwords and send users though forgot password flows.
+- Create users via the admin console or management API's.
 
 This is just the starting set of features - we're working hard to build out the right functionality by collecting early feedback from customers. **This is where you come in!**
 
 ### What to expect...
 
-<br>
 
 - You'll be able to directly influence features and product direction.
 
@@ -28,8 +28,6 @@ This is just the starting set of features - we're working hard to build out the 
 
 
 ### Things to note...
-
-<br>
 
 
 - We'll strive to keep documentation updated, but you can expect unannounced breaking changes as we develop quickly.
