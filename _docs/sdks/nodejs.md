@@ -27,7 +27,7 @@ This SDK will show you how to register and authenticate users into an app. The S
 
     ```
     export HOST=localhost
-    export OAUTH_ISSUER=http://openam.fr-saas-{tenantName}.forgeblocks.com/openam/oauth2
+    export OAUTH_ISSUER=http://openam.{TENANT_NAME}.forgeblocks.com/openam/oauth2
     export OAUTH_KEY={CLIENT_ID}
     export OAUTH_SCOPES="openid profile"
     export OAUTH_SECRET={SECRET}
