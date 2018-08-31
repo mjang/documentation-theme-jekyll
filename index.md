@@ -45,7 +45,7 @@ This is just the starting set of features - we're working hard to build out the 
 
 <br>
 
-> Now you know what it's all about let's get going! Don't be shy about feedback - the more we hear from you about what works and what doesn't the better the features you care about will be.
+> Now you know what it's all about let's get going! Don't be shy about feedback - the more we hear from you about what works and what doesn't, the better the features you care about will be.
 > <p class="center"><a href="{{ site.baseurl }}/overview/get-started/" class="btn btn-secondary"><i class="material-icons">build</i>quick start</a></p><br>
 
 

@@ -23,7 +23,7 @@ This SDK will show you how to register and authenticate users into an app. The S
 1. On your local machine make sure you have node installed.
 1. Clone the SDK from <a href="https://github.com/ForgeCloud/app-sdk" target="_blank">github</a>.
 1. From the command line navigate to the app-sdk folder and run `npm i`{: .plain} to install dependencies.
-1. In the start.sh file in the root folder enter client id, secret and uri with the information you copied from the app.
+1. In the root folder, in the start.sh file enter client id, secret and uri information you copied from the app.
 
     ```
     export HOST=localhost

@@ -6,7 +6,17 @@ order: 2
 
 How you integrate authentication and authorization into your application depends on the kind of app you have and how users interact with it. 
 
-ForgeRock uses OAuth 2.0 to authorize access to protected resources and OpenID Connect to provide an identity layer on top of the OAuth 2.0 protocol. The [OAuth 2.0 specification](https://tools.ietf.org/html/rfc6749) is an authorization framework describing how a client application can acquire an access token which can be used to authenticate a request to an API endpoint.  It does not describe methods for authentication. To get access to a protected resources OAuth 2.0 uses access tokens ([JWT's](http://jwt.io)).
+ForgeRock uses [OAuth 2.0](https://tools.ietf.org/html/rfc6749) to authorize access to protected resources and [OpenID Connect](http://openid.net/specs/openid-connect-core-1_0.html) to provide an identity layer on top of the OAuth 2.0 protocol. OAuth 2.0 is a delegation protocol that allows someone who controls a resource to let a software application access that resource on their behalf without impersonating them. 
+
+#### In a Nutshell....
+
+To access protected resources a client app registers itself with the resource server and gets a client id and secret.
+
+1. The Resource Owner tells the Client that they would like the Client to act on their behalf.
+1. The Client requests authorization from the Resource Owner at the Authorization Server.
+1. The Resource Owner grants authorization to the Client.
+1. The Client receives a Token from the Authorization Server (ForgeRock).
+1. The Client presents the Token to the Protected Resource.
 
 
 <a name="top"></a>
@@ -15,20 +25,14 @@ ForgeRock uses OAuth 2.0 to authorize access to protected resources and OpenID C
 [Web App](#web) || [Machine 2 Machine App](#machine2machine) || [Client Side App](#clientside) || [Native App](#native)
 {: .mini-nav}
 
-#### In a Nutshell....
-
-To access protected resources a client app registers itself with the resource server and gets a client id and secret.
-The app then accesses protected resources by:
-1. Authorizing the resource owner (usually a person).
-1. Obtaining an access token from the authorization server.
-1. Finally accessing the protected resource using the token passed back by the authorization server.
-
-In the ForgeRock admin you need to register your application and get a client id and secret in order to obtain an access token.  In general there are two types of applications.
 
 
-| 1. Confidential  | 2. Public  |
+In the ForgeRock admin you need to register your application in order to obtain an access token.  In general there are two types of applications.
+
+
+| 1. Confidential App  | 2. Public App |
 | ------------- | ------------- | 
-| Able to hold credentials (such as a client ID and secret) in a secure way without exposing them to unauthorized parties. This means that the developer will need a trusted backend server to store the secret(s). E.g. A server side web app where code runs on the server. | Cannot hold credentials securely. E.g. a client side single page app where all the code runs in the browser. | 
+| Can hold credentials (such as a client ID and secret) in a secure way without exposing them to unauthorized parties. This means that the developer will need a trusted backend server to store the secret(s). *Example: A server side web app where code runs on the server.* | Cannot hold credentials securely. *Example: a client side single page app where all the code runs in the browser.* | 
 
 Each type of application requires different authorization flows that are implemented by setting grant types on the application. When you register your app in the ForgeRock admin console we will automatically set the appropriate grant types for the type of application you have selected.
 
@@ -106,7 +110,9 @@ Note: You cannot use refresh tokens for long-lived access with this app type.
 
 <a name="native"></a>
 ### Native App
-This app very similar to the client-side application as the credentials are not trusted to be kept confidential. With this flow it is recommended to use the PKCE extension. This involves the app generating an arbitrary code and using that when exchanging the the authorization code for a secret. By doing this if the auth code is intercepted then it cannot be used without the arbitrary code.
+If you have a mobile backend server for your native app, then you can use the web app flow. If the app does not have a secure backend server, then you can use the secure storage API's on the device to store the client credentials. Though this seems secure it's technically not considered a confidential client. 
+
+The credentials are not trusted to be kept confidential. With this flow it is recommended to use the PKCE extension. This involves the app generating an arbitrary code and using that when exchanging the the authorization code for a secret. By doing this if the auth code is intercepted then it cannot be used without the arbitrary code.
 
 **Grant Type: Authorization Code with PKCE** 
 
