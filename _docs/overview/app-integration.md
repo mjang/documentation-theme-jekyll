@@ -41,7 +41,7 @@ Each type of application requires different authorization flows that are impleme
 - Client Credentials Grant
 - Authorization Code Grant
 - Implicit Grant *(not yet supported)*{: .gray}
-- Resource Owner Password Credentials Grant *(not yet supported)*{: .gray}
+- Resource Owner Password Credentials Grant 
 - Refresh Token Grant
 
 <a name="web"></a>
@@ -51,9 +51,9 @@ This is probably the most common type of application. A web application runs on 
 
 An example of this type of app might be an eCommerce site built in node.js where people login to shop for goods. 
 
-**Authorization Flows: Authorization Code, Refresh**
+**Authorization Flows: Authorization Code, Refresh, Password**
 
-
+Using the Auth Code Grant
 1. Resource owner authorizes access to their data
 2. Resource owner is redirected back to the web application with an authorization code as a query parameter in the URL. 
 3. This code is exchanged for an access token by the client application.

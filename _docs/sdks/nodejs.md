@@ -18,24 +18,22 @@ This SDK will show you how to register and authenticate users into an app. The S
 #### Steps
 
 1. In the ForgeRock cloud console create a web app
-1. Enter 'http://localhost:8100/callback' in the uri whitelist field and hit save.
-1. Copy and save the client id, secret and uri.
+1. Enter `http://localhost:9080/callback`{: .plain} in the 'login redirect whitelist' field.
+1. Enter `http://localhost:9080`{: .plain} in the 'logout redirect whitelist' field.
+1. Hit 'save'
+1. Copy and save the client id, secret.
 1. On your local machine make sure you have node installed.
 1. Clone the SDK from <a href="https://github.com/ForgeCloud/app-sdk" target="_blank">github</a>.
-1. From the command line navigate to the app-sdk folder and run `npm i`{: .plain} to install dependencies.
-1. In the root folder, in the start.sh file enter client id, secret and uri information you copied from the app.
+1. From the command line navigate to the app-sdk folder and run the following.
 
     ```
-    export HOST=localhost
-    export OAUTH_ISSUER=http://openam.{TENANT_NAME}.forgeblocks.com/openam/oauth2
-    export OAUTH_KEY={CLIENT_ID}
-    export OAUTH_SCOPES="openid profile"
-    export OAUTH_SECRET={SECRET}
+    npm i
+    sh start.sh {tenant name} {client id} {secret}
     ```
     {: .language-javascript}
 
-1. Start the app by running `sh start.sh`{: .plain} and hit [http://localhost:8100](http://localhost:8100) in your browser.
+1. Hit [http://localhost:9080](http://localhost:9080) in your browser.
 
-In the app you can now test registering, logging in and logging out. To see what the code is doing and how the endpoints are being called look at index.js.
+In the app you can now test registering, logging in and logging out. 
 
 <br><br>
