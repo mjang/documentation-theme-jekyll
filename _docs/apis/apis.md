@@ -10,13 +10,13 @@ There are two main API's for the ForgeRock Identity Cloud: the Authentication AP
 
 ##### Authentication API
 This allows you to authenticate users to gain access to your applications or assign to access the Management API. You can use this API if you want to build authentication into your apps without using the hosted login pages. 
-[Explore the Authentication API](#)
+[Explore the Authentication API](https://documenter.getpostman.com/view/2758124/RWaHypqU)
 
 ---
 
 ##### Management API
 The Management API allows you to manage users and other objects in the system. To call this API you need to create a Machine 2 Machine application under 'applications' and assign it to the API. You can then exchange a client ID and secret for an access token and call the API using the token.
-[Explore the Management API](#)
+[Explore the Management API](https://documenter.getpostman.com/view/2758124/RWaHz9db )
 
 
 

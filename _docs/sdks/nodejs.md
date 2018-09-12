@@ -19,7 +19,7 @@ This SDK will show you how to register and authenticate users into an app. The S
 
 1. In the ForgeRock cloud console create a web app
 1. Enter `http://localhost:9080/callback`{: .plain} in the 'login redirect whitelist' field.
-1. Enter `http://localhost:9080`{: .plain} in the 'logout redirect whitelist' field.
+1. Enter `http://localhost:9080/`{: .plain} in the 'logout redirect whitelist' field.
 1. Hit 'save'
 1. Copy and save the client id, secret.
 1. On your local machine make sure you have node installed.
