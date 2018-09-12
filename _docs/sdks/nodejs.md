@@ -1,6 +1,6 @@
 ---
 title: Node.js SDK
-category: SDK's
+category: SDKs
 category-order: 3
 order: 1
 ---
