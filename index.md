@@ -13,7 +13,7 @@ Some stuff you can do...
 - Set up and configure hosted login and registration pages.
 - Set password policy.
 - Reset passwords and send users through forgot password flows.
-- Create users via the admin console or management API's.
+- Create users via the admin console or management APIs.
 
 This is just the starting set of features - we're working hard to build out the right functionality by collecting early feedback from customers. **This is where you come in!**
 
