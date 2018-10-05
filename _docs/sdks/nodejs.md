@@ -6,7 +6,7 @@ order: 1
 ---
 
 
-This SDK will show you how to register and authenticate users into an app. The SDK uses the OAuth 2.0 confidential client flow, where an authorization code is exchanged for a token. Check out the section on [app types]({{ site.baseurl }}/overview/app-integration/) to lean more about authorization flows.
+This SDK will show you how to register and authenticate users into an app. The SDK uses the OAuth 2.0 confidential client type, where an authorization code is exchanged for a token. Check out the section on [app types]({{ site.baseurl }}/overview/app-integration/) to lean more about authorization flows.
 
 > **Node SDK** <br>
 > To get started clone the SDK from Github and follow the instructions.<br><br>

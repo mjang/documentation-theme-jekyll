@@ -1,6 +1,6 @@
 ---
 title: Glossary 
-category: Getting Started
+category: Overview
 order: 4
 ---
 
@@ -54,9 +54,11 @@ This is a special kind of token that contains whatever the Authorization Server 
 #### OAuth Scopes
 This is a representation of a set of rights to a protected resource. Scopes are represented by strings in the OAuth protocol. Clients can request scopes to access to a protected resource and the authorization server can allow or deny these.
 
-#### OpenID Connect
+#### OpenID Connect (OIDC)
 [OpenID Connect](http://openid.net/specs/openid-connect-core-1_0.html) is a simple identity layer on top of the OAuth 2.0 protocol. It enables Clients to verify the identity of the End-User based on the authentication performed by an Authorization Server, as well as to obtain basic profile information about the End-User in an interoperable and REST-like manner. It uses Claims to communicate information about the End-User. 
 
+#### SAML 
+An open standard for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider. As its name implies, SAML is an XML-based markup language for security assertions (statements that service providers use to make access-control decisions). Note as of now SAML is not supported in the cloud.
 
 
 

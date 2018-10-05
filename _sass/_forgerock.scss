@@ -150,6 +150,15 @@ footer {
 
 
 //Blockquotes ---------
+
+.wrap-text{
+    white-space: pre-wrap;      /* CSS3 */   
+    white-space: -moz-pre-wrap; /* Firefox */    
+    white-space: -pre-wrap;     /* Opera <7 */   
+    white-space: -o-pre-wrap;   /* Opera 7 */    
+    word-wrap: break-word;      /* IE */
+}
+
 blockquote {
     background-color: #fff;
     border-color: $primary;
@@ -158,6 +167,7 @@ blockquote {
     -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
     box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
     padding: 15px 15px;
+
 }
 
 blockquote.plain-blockquote {

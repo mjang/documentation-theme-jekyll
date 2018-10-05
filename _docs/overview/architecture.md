@@ -1,8 +1,8 @@
 ---
-title: System Architecture
-category: Getting Started
+title: Architecture
+category: Overview
 category-order: 1
-order: 3
+order: 1
 ---
 
 A foundation of the ForgeRock architecture is its "shared nothing" approach that dramatically improves security.  Your subscription comprises a sealed, self-sufficient environment containing dedicated computing, networking, and storage resources.  
@@ -13,6 +13,8 @@ During stage one of early access you will only have one tenant, but in the futur
 
 ### High Level Architecture Diagram
 
-> ![]({{ site.baseurl }}/images/architecture.png)
+
+> ![]({{ site.baseurl }}/images/architecture-v2.png)
 {: .plain-blockquote}
+
 

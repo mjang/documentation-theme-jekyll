@@ -1,5 +1,5 @@
 ---
-title: Early Access Release 0.0
+title: EA.09.12.2018
 type: major
 ---
 
@@ -13,6 +13,7 @@ This is the first major release of the ForgeRock Identity Cloud.
 * Hosted registration and login pages.
 * User management via the admin console and REST APIs.
 * Nodejs SDK.
+
 
 
 <!-- **Fixes:**

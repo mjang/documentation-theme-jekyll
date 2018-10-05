@@ -1,12 +1,12 @@
 ---
 title: Applications 
-category: Getting Started
+category: Overview
 order: 2
 ---
 
 How you integrate authentication and authorization into your application depends on the kind of app you have and how users interact with it. 
 
-ForgeRock uses [OAuth 2.0](https://tools.ietf.org/html/rfc6749) to authorize access to protected resources and [OpenID Connect](http://openid.net/specs/openid-connect-core-1_0.html) to provide an identity layer on top of the OAuth 2.0 protocol. OAuth 2.0 is a delegation protocol that allows someone who controls a resource to let a software application access that resource on their behalf without impersonating them. OpenID Connnect allows a client applciation to verify the authenticated user and to obtain basic information about the user via a simple REST like API.
+ForgeRock uses [OAuth 2.0](https://tools.ietf.org/html/rfc6749) to authorize access to protected resources and [OpenID Connect](http://openid.net/specs/openid-connect-core-1_0.html) to provide an identity layer on top of the OAuth 2.0 protocol. OAuth 2.0 is a delegation protocol that allows someone who controls a resource to let a software application access that resource on their behalf without impersonating them. OpenID Connect allows a client application to verify the authenticated user and to obtain basic information about the user via a simple REST like API.
 
 #### In a Nutshell....
 
