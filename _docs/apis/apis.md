@@ -10,7 +10,7 @@ There are two main APIs for the ForgeRock Identity Cloud: the Authentication API
 
 ### Authentication API
 Allows you to authenticate and authorize users and apps or assign to access the Management API. 
-<a href="https://documenter.getpostman.com/view/2758124/RWaHypqU" target="_blank">Explore the Authentication API</a>
+<a href="https://documenter.getpostman.com/view/1935580/RWgnYLKi" target="_blank">Explore the Authentication API</a>
 
 
 ### Management API
@@ -25,7 +25,7 @@ api.forgecloud.com:password-policy.read
 api.forgecloud.com:password-policy.write
 ```
 
-<a href="https://documenter.getpostman.com/view/2758124/RWaHz9db" target="_blank">Explore the Management API</a>
-
+<a href="https://documenter.getpostman.com/view/1935580/RWgnYLKj" target="_blank">Explore the Management API</a>
 <br>
+
 
