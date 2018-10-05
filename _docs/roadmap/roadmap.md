@@ -1,5 +1,5 @@
 ---
-title: Upcoming Features & Fixes
+title: Upcoming Features
 excluded_in_navigation: true
 ---
 
