@@ -48,12 +48,12 @@ To create a user first we need to get a token that authorizes us to update the u
     Then run the command in the terminal.
 
     ```
-    POST /v1/user HTTP/1.1
-    Host: api-YOUR_TENANT_NAME.forgeblocks.com
-    Content-Type: application/json
-    Authorization: Bearer ACCESS_TOKEN
-    Cache-Control: no-cache
-    {
+    curl -X POST \
+    https://api-YOUR_TENANT_NAME.forgeblocks.com/v1/users \
+    -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer ACCESS_TOKEN' \
+    -H 'cache-control: no-cache' \
+    -d '{
         "addresses": [
             {
                 "country": "US",
@@ -77,8 +77,9 @@ To create a user first we need to get a token that authorizes us to update the u
                 "value": "415-555-5555"
             }
         ],
-        "userName": "bjensen"
-    }
+        "userName": "bjensen",
+        "password":"Password99@"
+    }'
     ```
 
 1. That's it! check out the user in the UI to see what's there.
