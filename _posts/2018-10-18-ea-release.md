@@ -18,4 +18,5 @@ type: minor
  
 
 **Known Issues**
+* BUG #893: Cannot register a new user via the SDK
 * When setting up an application all grant types are allowed regardless of grant type boxes checked.
