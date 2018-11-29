@@ -7,25 +7,23 @@ excluded_in_navigation: true
 excluded_in_search: true
 ---
 
-You can use markdown in the email templates to format your emails and add css. Much of the below cheatsheet is cloned from the following awesome wiki: [Markdown-Here-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet).
-
+You can use markdown in the email templates to format your emails, add images, headers, css and more.
 
 
 ##### Table of Contents  
-[Headers](#headers)  
-[Emphasis](#emphasis)  
-[Lists](#lists)  
-[Links](#links)  
-[Attributes](#attributes)  
-[Images](#images)  
-[Code and Syntax Highlighting](#code)  
-[Tables](#tables)  
-[Blockquotes](#blockquotes)  
-[Inline HTML](#html)  
-[Horizontal Rule](#hr)  
-[Line Breaks](#lines)  
-[YouTube Videos](#videos)  
-
+- [Headers](#headers)  
+- [Emphasis](#emphasis)  
+- [Typographic Replacements](#typographic)  
+- [Lists](#lists)  
+- [Links](#links)  
+- [Styles](#styles)  
+- [Images](#images)  
+- [Tables](#tables)  
+- [Blockquotes](#blockquotes)  
+- [Inline HTML](#html)  
+- [Horizontal Rule](#hr)  
+- [Line Breaks](#lines)  
+- [Footnotes](#footnotes)  
 
 
 ---
@@ -42,14 +40,6 @@ You can use markdown in the email templates to format your emails and add css. M
 #### H4
 ##### H5
 ###### H6
-
-Alternatively, for H1 and H2, an underline-ish style:
-
-Alt-H1
-======
-
-Alt-H2
-------
 ```
 
 # H1
@@ -58,15 +48,6 @@ Alt-H2
 #### H4
 ##### H5
 ###### H6
-
-Alternatively, for H1 and H2, an underline-ish style:
-
-Alt-H1
-======
-
-Alt-H2
-------
-
 
 ---
 
@@ -92,7 +73,18 @@ Combined emphasis with **asterisks and _underscores_**.
 
 Strikethrough uses two tildes. ~~Scratch this.~~
 
+---
 
+<a name="typographic"/>
+
+## Typographic Replacements
+
+
+```no-highlight
+(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+```
+
+© © ® ® ™ ™ § § ±
 
 ---
 
@@ -100,43 +92,53 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 ## Lists
 
-(In this example, leading and trailing spaces are shown with with dots: ⋅)
+```
+Unordered
 
-```no-highlight
-1. First ordered list item
-2. Another item
-⋅⋅* Unordered sub-list. 
-1. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
-4. And another item.
++ Create a list by starting a line with `+`, `-`, or `*`
++ Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    * Ac tristique libero volutpat at
+    + Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
++ Very easy!
 
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+Ordered
 
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
 
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
+
+1. You can use sequential numbers...
+1. ...or keep all the numbers as `1.`
+
+Start numbering with offset:
+
+57. foo
+1. bar
 ```
 
-1. First ordered list item
-2. Another item
-  * Unordered sub-list. 
-1. Actual numbers don't matter, just that it's a number
-  1. Ordered sub-list
-4. And another item.
 
-   You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+#### Unordered
 
-   To have a line break without a paragraph, you will need to use two trailing spaces.  
-   Note that this line is separate, but within the same paragraph.  
-   (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
++ Create a list by starting a line with `+`, `-`, or `*`
++ Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    * Ac tristique libero volutpat at
+    + Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
++ Very easy!
 
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
+#### Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+
+1. You can use sequential numbers...
+1. ...or keep all the numbers as `1.`
 
 
 ---
@@ -145,78 +147,36 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 ## Links
 
-There are two ways to create links.
-
 ```no-highlight
-[I'm an inline-style link](https://www.google.com)
+[link text](http://forgerock.com)
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+[link with title](http://forgerock.com "title text!")
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
+Autoconverted link http://forgerock.com
 ```
 
-[I'm an inline-style link](https://www.google.com)
+[link text](http://forgerock.com)
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+[link with title](http://forgerock.com "title text!")
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
-
+Autoconverted link [http://forgerock.com](http://forgerock.com)
 
 ---
 
-<a name="attributes"/>
+<a name="styles"/>
 
-## Attributes
-
-In order to specify additional attributes to output in the html on the element, you start it with:
+## Styles
 
 ```no-highlight
-{: }
+# header {.style-me}
+paragraph {data-toggle=modal}
+
+output
+
+<h1 class="style-me">header</h1>
+<p data-toggle="modal">paragraph</p>
+
 ```
-
-To Specify a class
-
-```no-highlight
-{:.MyClass}
-```
-
-
-To Specify a title attribute
-
-```no-highlight
-{:title="My Title"}
-```
-{:.plain}
 
 
 ---
@@ -226,79 +186,28 @@ To Specify a title attribute
 ## Images
 
 ```no-highlight
-Here's our logo (hover to see the title text):
-
 Inline-style: 
-![alt text](https://www.forgerock.com/resources/view/64329345/logo/1Cblacksquare.png "Logo Title Text 1"){:width="48px"}
+![alt text](https://www.forgerock.com/resources/view/64329345/logo/1Cblacksquare.png "ForgeRock Logo Title Text 1")
 
 Reference-style: 
 ![alt text][logo]
 
-[logo]: https://www.forgerock.com/resources/view/64329345/logo/1Cblacksquare.png "Logo Title Text 2"
-{:width="48px"}
+[logo]: https://www.forgerock.com/resources/view/64329345/logo/1Cblacksquare.png "ForgeRock Logo Title Text 2"
 ```
 
-Here's our logo (hover to see the title text):
+
+
+Hover over the logo to see the title text
 
 Inline-style: 
-![alt text](https://www.forgerock.com/resources/view/64329345/logo/1Cblacksquare.png "Logo Title Text 1"){:width="48px"}
+![alt text](https://www.forgerock.com/resources/view/64329345/logo/1Cblacksquare.png "ForgeRock Logo Title Text 1"){:width="48px"}
 
 Reference-style: 
 ![alt text][logo]
 
-[logo]: https://www.forgerock.com/resources/view/64329345/logo/1Cblacksquare.png "Logo Title Text 2"
+[logo]: https://www.forgerock.com/resources/view/64329345/logo/1Cblacksquare.png "ForgeRock Logo Title Text 2"
 {:width="48px"}
 
-
-
----
-
-<a name="code"/>
-
-## Code and Syntax Highlighting
-
-Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and *Markdown Here* -- support syntax highlighting. Which languages are supported and how those language names should be written will vary from renderer to renderer. *Markdown Here* supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
-
-```no-highlight
-Inline `code` has `back-ticks around` it.
-```
-
-Inline `code` has `back-ticks around` it.
-
-Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
-
-<pre lang="no-highlight"><code>```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
- 
-```python
-s = "Python syntax highlighting"
-print s
-```
- 
-```
-No language indicated, so no syntax highlighting. 
-But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
-```
-</code></pre>
-
-
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-
-```python
-s = "Python syntax highlighting"
-print s
-```
-
-```
-No language indicated, so no syntax highlighting in Markdown Here (varies on Github). 
-But let's throw in a <b>tag</b>.
-```
 
 
 ---
@@ -329,7 +238,6 @@ Markdown | Less | Pretty
 1 | 2 | 3
 ```
 
-Colons can be used to align columns.
 
 | Tables        | Are           | Cool |
 | ------------- |:-------------:| -----:|
@@ -337,7 +245,6 @@ Colons can be used to align columns.
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-There must be at least 3 dashes separating each header cell. The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
 
 Markdown | Less | Pretty
 --- | --- | ---
@@ -377,24 +284,20 @@ Quote break.
 
 ## Inline HTML
 
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well. 
-
 ```no-highlight
 <dl>
   <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+  <dd>Is something you can use.</dd>
+  <dt>Definition list</dt>
+  <dd>Is something you can use.</dd>
 </dl>
 ```
 
 <dl>
   <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+  <dd>Is something you can use.</dd>
+    <dt>Definition list</dt>
+  <dd>Is something you can use.</dd>
 </dl>
 
 
@@ -427,51 +330,39 @@ Underscores
 
 ## Line Breaks
 
-My basic recommendation for learning how line breaks work is to experiment and discover -- hit &lt;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll soon learn to get what you want. "Markdown Toggle" is your friend. 
-
-Here are some things to try out:
+When you hit 'enter' a new paragraph will be created.
 
 ```
-Here's a line for us to start with.
+Here's some text.
 
-This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
-
-This line is also a separate paragraph, but...
-This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
+Some more text, but now I am a new paragraph because someone hit 'enter' above me.
 ```
-
-Here's a line for us to start with.
-
-This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
-
-This line is also begins a separate paragraph, but...  
-This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
-
-(Technical note: *Markdown Here* uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
-
 
 ---
 
-<a name="videos"/>
+<a name="footnotes"/>
 
-## YouTube Videos
+## Footnotes
 
 They can't be added directly but you can add an image with a link to the video like this:
 
 ```no-highlight
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+Footnote 1 link[^first].
+
+Footnote 2 link[^second].
 ```
 
-Or, in pure Markdown, but losing the image sizing and border:
 
-```no-highlight
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
-```
+Footnote 1 link[^first].
 
-Referencing a bug by #bugID in your git commit links it to the slip. For example #1. 
+Footnote 2 link[^second].
+
+Duplicated footnote reference[^second].
+
+[^first]: Footnote **can have markup**
+
+    and multiple paragraphs.
+
+[^second]: Footnote text.
 
 ---
-
-License: [CC-BY](https://creativecommons.org/licenses/by/3.0/)
