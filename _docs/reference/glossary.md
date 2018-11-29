@@ -1,7 +1,8 @@
 ---
 title: Glossary 
-category: Overview
-order: 4
+category: Reference
+category-order: 5
+order: 1
 ---
 
 
