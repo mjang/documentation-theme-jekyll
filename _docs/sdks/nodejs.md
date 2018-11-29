@@ -50,6 +50,8 @@ If you don’t have Git installed, see these instructions for installing Git <a 
 
 1. Hit [http://localhost:9080](http://localhost:9080) in your browser.
 
-In the app you can now test registering, logging in and logging out. 
+In the app you can now test registering, logging in and logging out.  Passwords
+are governed by complexity rules shown in your Web App, at the following URL:
+https://ui-{TENANT_NAME}.forgeblocks.com/authentication/password.
 
 <br><br>
