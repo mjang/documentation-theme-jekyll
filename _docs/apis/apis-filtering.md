@@ -6,7 +6,7 @@ order: 2
 ---
 
 
-We follow the <a href="https://tools.ietf.org/html/rfc7644#section-3.4.2" target="_blank">SCIM 2.0</a> standards for querying users. The SCIM protocol defines a standard set of query parameters that can be used to filter, sort, and paginate the response. 
+We follow the <a href="https://tools.ietf.org/html/rfc7644#section-3.4.2" target="_blank">SCIM 2.0</a> standards for querying users via the API. The SCIM protocol defines a standard set of query parameters that can be used to filter, sort, and paginate the response. 
 
 
 #### Example
@@ -47,15 +47,17 @@ filter=emails[type eq "work" and value co "@example.com"] or ims[type eq "xmpp" 
 
 | Parameter |  Description |
 |--------|-------------|
-**filter** | The query you want to filter by
-**startIndex** | The 1-based index of the first query result                     |
+**filter** | The query you want to filter by.
+**startIndex** | The 0-based index of the first query result.                     |
 **count** | Maximum number of query results. eg: 10. 
-**fields** | Fields to return from the query
-**sortBy** | The attribute you want to sort by
+**fields** | Fields to return from the query.
+**sortBy** | The attribute you want to sort by.
+
+
 
 ### Operators
 
-You can user operators to further refine your results.
+You can user operators to further refine your results. The actual comparison is dependent on the attribute type. For string attribute types, this is a lexicographical comparison and for DateTime types, it is a chronological comparison.
 
 Operator | Definition | Description |
 |--------|-------------|--------|
