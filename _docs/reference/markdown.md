@@ -28,7 +28,6 @@ You can use markdown in the email templates to format your emails, add images, h
 
 ---
 
-
 <a name="headers"/>
 
 ## Headers

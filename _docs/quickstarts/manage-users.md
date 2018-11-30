@@ -53,36 +53,76 @@ To create a user first we need to get a token that authorizes us to update the u
     -H 'Content-Type: application/json' \
     -H 'Authorization: Bearer ACCESS_TOKEN' \
     -H 'cache-control: no-cache' \
-    -d '{
-        "addresses": [
-            {
-                "country": "US",
-                "locality": "San Francisco",
-                "postalCode": "94107",
-                "region": "CA",
-                "streetAddress": "201 Mission Street"
-            }
-        ],
-        "emails": [
-            {
-                "value": "babs@coolcompany.com"
-            }
-        ],
-        "name": {
-            "familyName": "Babs",
-            "givenName": "Jensen"
-        },
-        "phoneNumbers": [
-            {
-                "value": "415-555-5555"
-            }
-        ],
-        "userName": "bjensen",
-        "password":"Password99@"
-    }'
+    -d '  {
+    "externalId": "701985",
+    "userName": "bjensen@example.com",
+    "accountVerified": true,
+    "name": {
+      "formatted": "Ms. Barbara J Jensen, III",
+      "familyName": "Jensen",
+      "givenName": "Barbara",
+      "middleName": "Jane",
+      "honorificPrefix": "Ms.",
+      "honorificSuffix": "III"
+    },
+    "displayName": "Babs Jensen",
+    "nickName": "Babs",
+    "profileUrl": "https://login.example.com/bjensen",
+    "emails": [
+      {
+        "value": "bjensen@example.com",
+        "type": "work",
+        "primary": true,
+        "verified": true
+      },
+      {
+        "value": "babs@jensen.org",
+        "type": "home",
+        "verified": false
+      }
+    ],
+    "addresses": [
+      {
+        "type": "work",
+        "streetAddress": "6925 Hollywood Blvd",
+        "locality": "Hollywood",
+        "region": "CA",
+        "postalCode": "90028",
+        "country": "US",
+        "formatted": "6925 Hollywood Blvd\nHollywood, CA 90028 USA",
+        "primary": true
+      },
+      {
+        "type": "home",
+        "streetAddress": "2800 E Observatory Rd",
+        "locality": "Los Angeles",
+        "region": "CA",
+        "postalCode": "90027",
+        "country": "US",
+        "formatted": "2800 E Observatory Rd\nLos Angeles, CA 90027 USA"
+      }
+    ],
+    "phoneNumbers": [
+      {
+        "value": "555-555-5555",
+        "type": "work"
+      },
+      {
+        "value": "555-555-4444",
+        "type": "mobile"
+      }
+    ],
+    "userType": "Customer",
+    "title": "Master Carpenter",
+    "preferredLanguage": "en-US",
+    "locale": "en-US",
+    "timezone": "America/Los_Angeles",
+    "active": true,
+    "password": "Passwordy1!"
+  }'
     ```
 
-1. That's it! check out the user in the UI to see what's there.
+1. That's it! check out the user in the UI to see what's there. We don't show all of the possible user fields in the UI, only the primary ones. You can use the management API to add additional data to the user.
 
 ### Where to go from here
 
