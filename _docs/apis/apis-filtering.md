@@ -6,7 +6,7 @@ order: 2
 ---
 
 
-We follow the <a href="https://tools.ietf.org/html/rfc7644#section-3.4.2" target="_blank">SCIM 2.0</a> standards for querying users via the API. The SCIM protocol defines a standard set of query parameters that can be used to filter, sort, and paginate the response. 
+You can query users via the API using query parameters that can be used to filter, sort, and paginate the response. 
 
 
 #### Example
@@ -29,20 +29,14 @@ There are a lot more ways you can query the users. These parameters and filters 
 
 ```
 filter=userName eq "bjensen"
-filter=name.familyName co "O'Malley"
+filter=name/familyName co "O'Malley"
 filter=userName sw "J"
 filter=title pr
-filter=meta.lastModified gt "2011-05-13T04:42:34Z"
-filter=meta.lastModified ge "2011-05-13T04:42:34Z"
-filter=meta.lastModified lt "2011-05-13T04:42:34Z"
-filter=meta.lastModified le "2011-05-13T04:42:34Z"
+filter=meta/lastModified gt "2011-05-13T04:42:34Z"
+filter=meta/lastModified ge "2011-05-13T04:42:34Z"
+filter=meta/lastModified lt "2011-05-13T04:42:34Z"
+filter=meta/lastModified le "2011-05-13T04:42:34Z"
 filter=title pr and userType eq "Employee"
-filter=title pr or userType eq "Intern"
-filter=userType eq "Employee" and (emails co "example.com" or  emails.value co "example.org")`
-filter=userType ne "Employee" and not (emails co "example.com" or emails.value co "example.org")`
-filter=userType eq "Employee" and (emails.type eq "work")`
-filter=userType eq "Employee" and emails[type eq "work" and  value co "@example.com"]`
-filter=emails[type eq "work" and value co "@example.com"] or ims[type eq "xmpp" and value co "@foo.com"]`
 ```
 
 | Parameter |  Description |
