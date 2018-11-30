@@ -32,10 +32,6 @@ filter=userName eq "bjensen"
 filter=name/familyName co "O'Malley"
 filter=userName sw "J"
 filter=title pr
-filter=meta/lastModified gt "2011-05-13T04:42:34Z"
-filter=meta/lastModified ge "2011-05-13T04:42:34Z"
-filter=meta/lastModified lt "2011-05-13T04:42:34Z"
-filter=meta/lastModified le "2011-05-13T04:42:34Z"
 filter=title pr and userType eq "Employee"
 ```
 
