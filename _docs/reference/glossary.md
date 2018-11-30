@@ -7,59 +7,68 @@ order: 1
 
 
 
-#### Team Member	
-A user of the ForgeRock administration console.
+#### Access Token
+Created by the Authorization Server. Used to access resources. Opaque to the client.
 
 #### Admin Console	
-Tool used by Team Members to manage their ecosystem e.g. setup users, tenants, apps etc.
-
-#### Tenant	
-This is a single, isolated instance of a the admin features. It contains apps, users, devices and rules.
+Tool used by Team Members to manage their ecosystem(s). For example, Team Mambers
+ can use the Admin Console to set up users, tenants, apps, and more.
 
 #### App User	
-A user of the apps created by the Team Member in the ForgeRock console.
-
-#### User Profile	
-User information and meta data related to a user.
-
-#### Resource Owner	
-The entity that can grant access to a protected resource.
+A regular user, created by a the Team Member, possibly through the ForgeRock
+ console.
 
 #### Application / Client
-A client application requesting access to a protected resource on the resource server on behalf of the Resource Owner.
-
-#### Resource Server	
-The server hosting the protected resources that you want to protect using OAuth2 protocol. It responds to requests from clients with access tokens.
+A client application that requests access to a protected resource on the resource server on behalf of the Resource Owner.
 
 #### Authorization Server	
-The server that authenticates the Resource Owner, and issues access tokens to apps after getting proper authorization. (ForgeRock)
-
-#### User Agent	
-The agent used by the Resource Owner to interact with the Client, for example a browser or a native application.
+The server that authenticates the Resource Owner, and issues access tokens to apps.
 
 #### ID Token
-This is a token in the form of a JWT that contains information (Claims) about a user and the authentication context. It can be parsed by the client to get information about a user. 
-
-#### Access Token
-This is a token minted by the Authorization Server that can be used to access resources and is opaque to the client.
-
-#### Refresh Token
-A Refresh Token is a special kind of token issued by the Authorization Server that can be used to obtain a new access token without involving the user. This type of token is only available when you set up a web app.
+Configured as a JWT with information (Claims) about a user and the authentication context. Can be parsed for user information. 
 
 #### JWT Token (JSON Web Token)
-This is a special kind of token that contains whatever the Authorization Server wants to put in it so it can communicate information to the Resource Server. The Resource Server can parse the token and make authorization decisions based on the information packed into the token.  
+Contains information from the Authorization Server to communicate with the Resource
+ Server. The Resource Server can make authorization decisions based information
+  parsed from the token.  
 
 #### OAuth 2.0
 [OAuth 2.0](https://tools.ietf.org/html/rfc6749) is a *delegation* protocol for conveying *authorization* decisions across a network of web-enabled applications and APIs.
 
-#### OAuth Scopes
-This is a representation of a set of rights to a protected resource. Scopes are represented by strings in the OAuth protocol. Clients can request scopes to access to a protected resource and the authorization server can allow or deny these.
+#### OAuth 2.0 Scopes
+A set of rights to a protected resource. Represented by strings in the OAuth 2.0 protocol. 
+Clients can request scopes to access to a protected resource. The Authorization Server can allow or deny such requests.
 
 #### OpenID Connect (OIDC)
-[OpenID Connect](http://openid.net/specs/openid-connect-core-1_0.html) is a simple identity layer on top of the OAuth 2.0 protocol. It enables Clients to verify the identity of the End-User based on the authentication performed by an Authorization Server, as well as to obtain basic profile information about the End-User in an interoperable and REST-like manner. It uses Claims to communicate information about the End-User. 
+[OpenID Connect](http://openid.net/specs/openid-connect-core-1_0.html) is an authentication layer on top of the OAuth 2.0 protocol. 
+Clients can use OIDC to verify the identity of an end-user based on the actions of an authorization server. It can also obtain basic 
+profile information about end-users in an interoperable and REST-like manner.
+
+#### Refresh Token
+Issued by the Authorization Server only for web apps. Can be used to obtain a new access token independent of the user.
+
+#### Resource Owner	
+An entity that can grant access to a protected resource.
+
+#### Resource Server	
+A host for protected resources using OAuth 2.0. A Resource Server responds to requests
+ from clients with access tokens.
 
 #### SAML 
-An open standard for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider. As its name implies, SAML is an XML-based markup language for security assertions (statements that service providers use to make access-control decisions). Note as of now SAML is not supported in the cloud.
+SAML is not supported for the ForgeRock cloud product.
+
+#### Team Member	
+A ForgeRock administration console user.
+
+#### Tenant	
+A single, isolated instance of the Admin Console. A Tenant contains apps,
+ users, devices and rules.
+
+#### User Profile	
+User information and metadata.
+
+#### User Agent	
+The agent used by the Resource Owner to interact with the Client, such as a browser or a native application.
 
 
 
