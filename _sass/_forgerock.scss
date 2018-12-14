@@ -69,11 +69,21 @@ code.plain{
 //Tables
 tr, td, th {
     border: 1px solid #eee;
+    vertical-align: top;
 }
 
 table.mini-nav tr, table.mini-nav td{
     border: 0px solid #EEE;
 }
+
+thead {
+    background: #EFF3F6;
+}
+
+tr:nth-child(even) {
+    background: transparent;
+}
+
 
 //Search ---------
 
@@ -268,12 +278,3 @@ a .octicon.octicon-mark-github{
 }
 
 
-// Table
-
-thead {
-    background: #EFF3F6;
-}
-
-tr:nth-child(even) {
-    background: transparent;
-}
