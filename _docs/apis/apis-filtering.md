@@ -37,12 +37,12 @@ filter=title pr and userType eq "Employee"
 
 | Parameter |  Description |
 |--------|-------------|
-**filter** | The query to filter by.
-**startIndex** | The 0-based index of the first query result.                     |
-**count** | Maximum number of query results. 
-**fields** | Fields to return from the query.
-**sortBy** | Attribute to sort by.
-
+filter | The query to filter by.
+startIndex | The 0-based index of the first query result.                     |
+count | Maximum number of query results. 
+fields | Fields to return from the query.
+sortBy | Attribute to sort by.
+{: .variable .textSmaller} 
 
 
 ### Comparators

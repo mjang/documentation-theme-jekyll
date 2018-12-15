@@ -28,7 +28,7 @@ There are a number of templates available out of the box that you can configure 
 | **Account&nbsp;Locked** | Sent when a user has been locked out of their account      | 
 | **Recover&nbsp;Username** | Email sent if user wishes to recover username     | 
 | **Username&nbsp;Recovered** | Sent after a user has recovered their username      | 
-
+{: .textSmaller} 
 
 
 ### Configuring Templates
@@ -43,21 +43,23 @@ Variables are formatted using double curly braces **\{\{ variableName \}\}** and
 
 
 
-| Variable | Description  |  Example  |
-| ------------- |------------- | ------------- |
-| \{\{application.name\}\} | Name of application the user registered via  | TrakMyExpenses
-| \{\{user.emails.primary\}\} | Primary email of the user  | bjensen@example.com
-| \{\{user.preferredLanguage\}\} | Preferred language of the user  | en-US
-| \{\{user.name.givenName\}\} | Given name / first name of the user  | Barbara
-| \{\{user.name.familyName\}\} | Family name / last name of the user   | Jensen
-| \{\{user.name.formatted\}\} | The users fully formatted name  | Ms. Barbara J Jensen, III
-| \{\{user.displayName\}\} | The display name of the user  | Babs Jensen
-| \{\{user.userName\}\} | The users username  | bjensen
-| \{\{url\}\} | Generic link that will either confirm account registration or reset password within the email	  | 
-| \{\{url.expiry\}\} | Time till url link expires in hours  | 
-| \{\{date\}\} | Date and time of request  | 
-| \{\{organization.name\}\} | Organization name  | Mega Money Mgr Inc.
-| \{\{tenant.name\}\} | Tenant Name  | Mega&nbsp;Money&nbsp;Mgr-Dev
+| Variable | Description  | 
+| ------------- |------------- |
+| \{\{application.name\}\} | Name of application the user registered from. <br> *Example: TrakMyExpenses*  
+| \{\{user.emails.primary\}\} | Primary email of the user. <br> *Example: bjensen@example.com*
+| \{\{user.preferredLanguage\}\} | Preferred language of the user.  <br> *Example: en-US*
+| \{\{user.name.givenName\}\} | Given name / first name of the user.  <br> *Example: Barbara*
+| \{\{user.name.familyName\}\} | Family name / last name of the user.  <br> *Example: Jensen*
+| \{\{user.name.formatted\}\} | The users fully formatted name.  <br> *Example: Ms. Barbara J Jensen, III*
+| \{\{user.displayName\}\} | The display name of the user.  <br> *Example: Babs Jensen*
+| \{\{user.userName\}\} | The users username.  <br> *Example: bjensen*
+| \{\{url\}\} | Generic link that will either confirm account registration or reset password within the email.
+| \{\{url.expiry\}\} | Time till url link expires in hours.
+| \{\{date\}\} | Date and time of request.
+| \{\{organization.name\}\} | Organization name.  <br> *Example: Mega Money Mgr Inc.*
+| \{\{tenant.name\}\} | Tenant Name.  <br> *Example: Mega&nbsp;Money&nbsp;Mgr-Dev*
+{: .variable .textSmaller} 
+
 
 
 <br>

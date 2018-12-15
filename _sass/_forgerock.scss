@@ -84,6 +84,15 @@ tr:nth-child(even) {
     background: transparent;
 }
 
+table.textSmaller {
+    font-size: 0.9em;
+}
+
+//Code
+table.variable tr td:first-child, p.variable  {
+    font-family:courier, courier new;
+}
+
 
 //Search ---------
 
