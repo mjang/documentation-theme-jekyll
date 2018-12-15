@@ -20,14 +20,14 @@ There are a number of templates available out of the box that you can configure 
 
 | Template Name | Description  | 
 | ------------- |------------- | 
-| **Registration**  | Sent whenever a user signs up for the first time     |  
-| **Welcome** | Sent once the user verifies their email address      | 
-| **Forgot&nbsp;Password** | Sent whenever a user requests a password change      | 
-| **Password&nbsp;Reset&nbsp;Successful** | Sent when a user has successfully reset their password      | 
-| **Email&nbsp;Update&nbsp;Successful** | Sent when a user has successfully changed their email. The email will go to both the old and new account in case the user did not request it | 
-| **Account&nbsp;Locked** | Sent when a user has been locked out of their account      | 
-| **Recover&nbsp;Username** | Email sent if user wishes to recover username     | 
-| **Username&nbsp;Recovered** | Sent after a user has recovered their username      | 
+| **Registration**  | Sent whenever a user signs up for the first time.     |  
+| **Welcome** | Sent once the user verifies their email address.      | 
+| **Forgot&nbsp;Password** | Sent whenever a user requests a password change.      | 
+| **Password&nbsp;Reset&nbsp;Successful** | Sent when a user has successfully reset their password.      | 
+| **Email&nbsp;Update&nbsp;Successful** | Sent when a user has successfully changed their email. The email will go to both the old and new account in case the user did not request it. | 
+| **Account&nbsp;Locked** | Sent when a user has been locked out of their account.      | 
+| **Recover&nbsp;Username** | Email sent if user wishes to recover username.     | 
+| **Username&nbsp;Recovered** | Sent after a user has recovered their username.      | 
 {: .textSmaller} 
 
 
@@ -35,7 +35,6 @@ There are a number of templates available out of the box that you can configure 
 
 Email templates are written in [markdown]({{ site.baseurl }}/reference/markdown) and can be skinned using CSS. You can also use variables in the template to pull data from various entities in the system like users, apps and tenants.
 
-<br><br>
 
 #### Variables
 
