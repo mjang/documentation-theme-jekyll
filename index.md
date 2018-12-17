@@ -46,9 +46,8 @@ This is just the starting set of features - we're working hard to build out the 
 
 Now you know what it's all about let's get going! Don't be shy about feedback - the more we hear from you about what works and what doesn't, the better the features you care about will be.
 
-> Get started by creating a web app or trying out the management API.
+> <a href="https://ea.forgeblocks.com/auth" target="_blank">Log in</a> and get started by creating a web app or trying out the management API.
 > <p class="center"><a href="{{ site.baseurl }}/quickstarts/web-app" class="btn btn-secondary"><i class="material-icons">computer</i>create a web app</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ site.baseurl }}/quickstarts/manage-users" class="btn btn-secondary"><i class="material-icons">code</i> management API</a></p><br>
-
 
 
 <br>
