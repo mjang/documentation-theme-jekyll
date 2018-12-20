@@ -2,8 +2,6 @@
 title: Email Templates 
 category: Overview
 order: 4
-excluded_in_navigation: true
-excluded_in_search: true
 ---
 
 ForgeRock allows you to create emails that are automatically sent when triggered by a users activity. 
