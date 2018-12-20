@@ -20,7 +20,7 @@ There are a number of templates available out of the box that you can configure 
 | ------------- |------------- |
 | **Registration**  | Sent whenever a user signs up for the first time.  
 | **Forgot&nbsp;Password** | Sent whenever a user requests a password change. 
-| **Recover&nbsp;Username** | Email sent if user wishes to recover username. 
+| **Recover&nbsp;Username** | Email sent if user asks to recover their username. 
 
 {: .textSmaller} 
 

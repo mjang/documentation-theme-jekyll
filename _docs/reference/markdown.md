@@ -3,11 +3,11 @@ title: Markdown Cheat Sheet
 category: Reference
 category-order: 5
 order: 2
-excluded_in_navigation: true
-excluded_in_search: true
 ---
 
-You can use markdown in the email templates to format your emails, add images, headers, css and more.
+Markdown is a way to style text on the web in plain text. In general you just write in plain text and use special symbols to format text like `#`{: .plain} to indicate a header or `**`{: .plain} to indicate bold text. 
+
+You can use markdown in [email templates]({{ site.baseurl }}/overview/email-templates/) to format the body of your emails, add images, headers, and css.
 
 
 ##### Table of Contents  
