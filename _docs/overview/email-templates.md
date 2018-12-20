@@ -18,16 +18,26 @@ For example when a user registers for your service or application you can trigge
 There are a number of templates available out of the box that you can configure and send to your users.
 
 
-| Template Name | Description  | 
-| ------------- |------------- | 
-| **Registration**  | Sent whenever a user signs up for the first time.     |  
-| **Welcome** | Sent once the user verifies their email address.      | 
-| **Forgot&nbsp;Password** | Sent whenever a user requests a password change.      | 
-| **Password&nbsp;Reset&nbsp;Successful** | Sent when a user has successfully reset their password.      | 
-| **Email&nbsp;Update&nbsp;Successful** | Sent when a user has successfully changed their email. The email will go to both the old and new account in case the user did not request it. | 
-| **Account&nbsp;Locked** | Sent when a user has been locked out of their account.      | 
-| **Recover&nbsp;Username** | Email sent if user wishes to recover username.     | 
-| **Username&nbsp;Recovered** | Sent after a user has recovered their username.      | 
+| Template Name | Description  |
+| ------------- |------------- |
+| **Registration**  | Sent whenever a user signs up for the first time.  
+| **Forgot&nbsp;Password** | Sent whenever a user requests a password change. 
+| **Recover&nbsp;Username** | Email sent if user wishes to recover username. 
+
+{: .textSmaller} 
+
+---
+
+ ***Coming Soon...***
+<br>
+
+| Template Name | Description  |  
+| ------------- |------------- |
+| **Welcome** | Sent once the user verifies their email address. 
+| **Password&nbsp;Reset&nbsp;Successful** | Sent when a user has successfully reset their password.    
+| **Email&nbsp;Update&nbsp;Successful** | Sent when a user has successfully changed their email. The email will go to both the old and new account in case the user did not request it.
+| **Account&nbsp;Locked** | Sent when a user has been locked out of their account.     
+| **Username&nbsp;Recovered** | Sent after a user has recovered their username.    
 {: .textSmaller} 
 
 
