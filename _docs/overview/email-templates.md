@@ -4,9 +4,9 @@ category: Overview
 order: 4
 ---
 
-ForgeRock allows you to create emails that are automatically sent when triggered by a users activity. 
+ForgeRock allows you to design emails that are automatically sent when triggered by a users activity. 
 
-For example when a user registers for your service or application you can trigger an account verification email. The email can contain a link to verify their account and welcome them to your service. 
+For example when a user registers for your service or application you can trigger an account verification email. The email can contain a link to verify their account and welcome them to your service. You can modify the look and feel by using [markdown]({{ site.baseurl }}/reference/markdown/).
 
 
 

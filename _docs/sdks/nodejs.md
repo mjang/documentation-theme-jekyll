@@ -34,7 +34,7 @@ If you don’t have Git installed, see these instructions for installing Git <a 
 {: .plain-blockquote}
 
 1. In the ForgeRock cloud console create a web app
-1. Enter `http://localhost:9080/callback`{: .plain} in the 'login redirect whitelist' field.
+1. Enter `http://localhost:9080/callback, http://localhost:9080/callback/non-hosted`{: .plain} in the 'login redirect whitelist' field (make sure you comma separate the urls).
 1. Enter `http://localhost:9080/`{: .plain} in the 'logout redirect whitelist' field.
 1. Hit 'save'
 1. Copy and save the client id, secret.
