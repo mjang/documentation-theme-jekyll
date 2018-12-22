@@ -12,11 +12,11 @@ We've created Postman collections describing the APIs. To run the calls in Postm
 
 ### Authentication API
 Allows you to authenticate and authorize users and apps or assign to access the Management API. 
-<a href="https://developer-api.forgerock.com/#45dc632b-91f2-4ea5-a9da-d4d9f395cfd5" target="_blank">Explore the Authentication API</a>
+<a href="https://documenter.getpostman.com/view/2758124/Rzn8Pgwy" target="_blank">Explore the Authentication API</a>
 
 
 ### Management API
-Allows you to manage users and other objects in the system. To access the management API you need to use the authentication API to get an access token and pass it along with your calls to the management API.  <a href="https://developer-api.forgerock.com/#6af844f9-ecea-422e-8508-b1017b4cb6bc" target="_blank">Explore the Management API</a>. 
+Allows you to manage users and other objects in the system. To access the management API you need to use the authentication API to get an access token and pass it along with your calls to the management API.  <a href="https://documenter.getpostman.com/view/2758124/Rzn8Pgwy#54d694b2-9982-4d8a-b2c7-0a99315b1eb7" target="_blank">Explore the Management API</a>. 
 
 There are also ways to filter users via the management API. Check out the user endpoint [filtering parameters]({{ site.baseurl }}/apis/apis-filtering/).
 
