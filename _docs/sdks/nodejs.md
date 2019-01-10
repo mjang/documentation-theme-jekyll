@@ -1,57 +1,60 @@
 ---
-title: Node.js SDK
+title: Web App (Node.js SDK)
 category: SDKs
 category-order: 4
 order: 1
 ---
 
 
-This SDK will show you how to register and authenticate users into an app. The SDK uses the OAuth 2.0 confidential client type, where an authorization code is exchanged for a token. Check out the section on [app types]({{ site.baseurl }}/overview/app-integration/) to lean more about authorization flows.
+This page shows you how to register and authenticate users in a web app, using 
+the Node.js SDK. 
 
 ---
 
 ## Before you begin
-You can skip this section if you have node and git already installed.
+Before running a web app locally, install the following software:
 
+* [NodeJS](https://nodejs.org/en/download/)
+* [npm](https://www.npmjs.com/get-npm)
+* [git](https://help.github.com/articles/set-up-git/)
 
-#### 1. Install Node & Node Package Manager (npm)
-We’ll need to make sure we have a working Node.js development environment along with npm. Npm is installed when you install node. Check you have npm by running the following command in you terminal.
+Next, clone the [**ForgeRock Client Application SDK**](https://github.com/ForgeCloud/app-sdk).
 
-`$ npm -v`{: .plain}
+You can then set up access to a ForgeRock cloud console. To set one up, follow [link to TBD procedure]
 
-If you get an error then you need to install node. Please refer to the Node.js website for detailed information: <a href="https://nodejs.org/download/" target="_blank">https://nodejs.org/download/</a>
-
-#### 2. Install Git
-If you don’t have Git installed, see these instructions for installing Git <a href="https://help.github.com/articles/set-up-git/" target="_blank">https://help.github.com/articles/set-up-git/</a>
+[comment]: <> (Doc issue: https://trello.com/c/x06tXuL2)
 
 ---
 
 ## Quick Start
 
-> **Node SDK** <br>
-> To get started clone the SDK from Github and follow the instructions.<br><br>
-> <a href="https://github.com/ForgeCloud/app-sdk" target="_blank" class="btn btn-secondary">{% octicon mark-github" %}Clone from Github</a>
-{: .plain-blockquote}
-
-1. In the ForgeRock cloud console create a web app
-1. Enter `http://localhost:9080/callback, http://localhost:9080/callback/non-hosted`{: .plain} in the 'login redirect whitelist' field (make sure you comma separate the urls).
-1. Enter `http://localhost:9080/`{: .plain} in the 'logout redirect whitelist' field.
-1. Hit 'save'
-1. Copy and save the client id, secret.
-1. On your local machine make sure you have node installed.
-1. Clone the SDK from <a href="https://github.com/ForgeCloud/app-sdk" target="_blank">github</a>.
-1. From the command line navigate to the app-sdk folder and run the following.
-
-    ```
-    npm i
-    sh start.sh {tenant name} {client id} {secret}
-    ```
-    {: .language-javascript}
-
-1. Hit [http://localhost:9080](http://localhost:9080) in your browser.
-
-In the app you can now test registering, logging in and logging out.  Passwords
+In the app you can now test self-registration, logins and logouts.  Passwords
 are governed by complexity rules shown in your Web App, at the following URL:
 https://ui-{TENANT_NAME}.forgeblocks.com/authentication/password.
 
-<br><br>
+1. Navigate to your ForgeRock cloud console, at `https://ui-{TENANT_NAME}.forgeblocks.com`{: .plain}.
+2. Select Applications > New Application.
+3. In the New Application window, select Web.
+4. Enter a unique name for your application.
+5. In the **Login Redirect URL Whitelist** field, enter `http://localhost:9080/callback, http://localhost:9080/callback/non-hosted`{: .plain}.
+6. In the **Logout Redirect URL Whitelist** field, enter `http://localhost:9080/`{: .plain}.
+* If desired, you can modify token lifetime options and grant types, as discussed in 
+[Web App, Advanced Settings]({{ site.baseurl }}/sdks/nodejs-options).
+7. Select **Create Application**. 
+8. In the **Client Credentials** section, review and save the **Client ID** and the **Client Secret**.
+9. Navigate to the directory where you saved the **ForgeRock Client Application SDK** 
+repository.
+10. Run the following commands, using the **Tenant Name**, **Client ID**, and the 
+**Client Secret** created earlier:<br>
+ $ ``` sudo npm i ```{: .plain}  
+ $ ``` sudo sh start.sh {Tenant Name} {Client ID} {Client Secret} ```{: .plain} 
+11. Open a browser and havigate to [http://localhost:9080](http://localhost:9080).
+Your browser redirects that URL to your cloud console URL at `https://ui-{tenantName}.forgeblocks.com`{: .plain}
+12. You can now register and authenticate users locally in the web app that you just created.
+
+
+## Technical Notes
+
+This SDK uses the OAuth 2.0 confidential client type, where an 
+authorization code is exchanged for a token. To learn more about authentication 
+flows, see the following section on [Creating a Web App]({{ site.baseurl }}/quickstarts/web-app/).

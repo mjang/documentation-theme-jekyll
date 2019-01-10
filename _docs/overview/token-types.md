@@ -78,8 +78,9 @@ refresh token will be returned.
 
 ### Example REST Call
 
-To see how this works, refer to the following POST on the ```/oauth2/access_token``` 
-endpoint in the [API Documentation](https://developer-api.forgerock.com/#5ad32ea8-5996-4bb7-9828-f6edc65d5204).
+To see how this works, refer to the POST for a Password Grant 
+on the ```/oauth2/access_token``` endpoint in the 
+[Authentication API](https://documenter.getpostman.com/view/2758124/Rzn8Pgwy#da41328c-3b59-42c7-a23b-745fe1ea043e).
 
 
 ### Additional Reading
