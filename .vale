@@ -1,0 +1,9 @@
+StylesPath = vale
+MinAlertLevel = suggestion
+
+[*.{md,rst,txt,json}]
+BasedOnStyles = proselint, write-good, joblint, WTD, TheEconomist, ForgeRock, PlainLanguage
+
+vale.Redundancy = YES
+#vale.Repetition = YES
+vale.GenderBias = YES
