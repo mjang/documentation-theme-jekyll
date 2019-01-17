@@ -28,8 +28,8 @@ You can then set up access to a ForgeRock cloud console. To set one up, follow [
 
 ## Quick Start
 
-In the app you can now test self-registration, logins and logouts.  Passwords
-are governed by complexity rules shown in your Web App, at the following URL:
+In the web app you can now test self-registration, logins, and logouts. Passwords
+are governed by complexity rules shown in your web app, at the following URL:
 https://ui-{TENANT_NAME}.forgeblocks.com/authentication/password.
 
 1. Navigate to your ForgeRock cloud console, at `https://ui-{TENANT_NAME}.forgeblocks.com`{: .plain}.
