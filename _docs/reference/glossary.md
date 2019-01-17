@@ -5,7 +5,7 @@ category-order: 5
 order: 1
 ---
 
-For a description of token types, see the [Tokens](({{ site.baseurl }}/overview/token-types/)) page.
+For a description of token types, see the [Tokens]({{ site.baseurl }}/overview/token-types) page.
 
 
 #### Admin Console	
