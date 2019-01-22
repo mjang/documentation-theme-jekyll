@@ -46,8 +46,8 @@ https://ui-{TENANT_NAME}.forgeblocks.com/authentication/password.
 repository.
 10. Run the following commands, using the **Tenant Name**, **Client ID**, and the 
 **Client Secret** created earlier:<br>
- $ ``` sudo npm i ```{: .plain}  
- $ ``` sudo sh start.sh {Tenant Name} {Client ID} {Client Secret} ```{: .plain} 
+ $ ``` npm i ```{: .plain}  
+ $ ``` sh start.sh {Tenant Name} {Client ID} {Client Secret} ```{: .plain} 
 11. Open a browser and havigate to [http://localhost:9080](http://localhost:9080).
 Your browser redirects that URL to your cloud console URL at `https://ui-{tenantName}.forgeblocks.com`{: .plain}
 12. You can now register and authenticate users locally in the web app that you just created.
