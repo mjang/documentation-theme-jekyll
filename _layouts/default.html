@@ -56,7 +56,7 @@
 					{% assign grouped = site.docs | sort: 'category-order' | group_by: 'category' %}
 					{% for group in grouped %}
 						<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
-							
+
 							{% assign items = group.items | sort: 'order' %}
 
 							{% if items.first.excluded_in_navigation != true %}
@@ -69,7 +69,7 @@
 									{% endfor %}
 								</ul>
 								{% endif %}
-						
+
 
 						</li>
 					{% endfor %}
@@ -84,7 +84,7 @@
 					</li>
 
 					<li class="nav-item top-level">
-						<a href="{{ site.baseurl }}/roadmap/roadmap">Upcoming Features</a>
+						<a href="{{ site.baseurl }}/roadmap/roadmap">Roadmap</a>
 					</li>
 				</ul>
 
@@ -143,9 +143,9 @@
 		</ul>
 		<!-- <p> Contact | Forums | Blog | Support</p> -->
 
-		<p> 
-			<a href="mailto:ea.cloud@forgerock.com">Contact us</a> | 
-			<a target="_blank" href="http://ea.forgeblocks.com/auth">Login</a> 
+		<p>
+			<a href="mailto:ea.cloud@forgerock.com">Contact us</a> |
+			<a target="_blank" href="http://ea.forgeblocks.com/auth">Login</a>
 		</p>
 
 		<p class="copyright">© <a target="_blank" href="https://forgerock.com">ForgeRock</a> 2018. All rights reserved.</p>

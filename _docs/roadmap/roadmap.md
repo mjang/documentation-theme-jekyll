@@ -1,15 +1,17 @@
 ---
-title: Upcoming Features 
+title: Roadmap
 excluded_in_navigation: true
 ---
 
 <br>
 
-### Next up
+### Work In Progress
 
-* Additional email templates
-* Authentication trees
-* API Scopes
+<br>
+
+* Additional email templates.
+* Authentication trees.
+* API Scopes.
 
 
 ### Completed
@@ -17,14 +19,22 @@ excluded_in_navigation: true
 <br>
 
 #### Latest
-* Ability to invite multiple Team Members to manage an organization.
-* Configurable email templates.
-* Using auth_code flow without hosted pages.
+<br>
+You can now:
+* Invite Team Members to manage an organization, as described in the following page: [Team Members and App Users](({{ site.baseurl }}/reference/reference-users)).
+* Configure [Email Templates](({{ site.baseurl }}/quickstarts/email-templates)).
+* Use `auth_code`{: .plain} flow without hosted pages, as described in the [Applications](({{ site.baseurl }}/overview/applications)) page.
+
+<br>
 
 #### Previous
 
-* Split Team Members and App Users in UI and API.
+<br>
+
+You can read more about these features in the following section: [Team Members and App Users]({{ site.baseurl }}/reference/reference-users).
+
+* Split Team Members and App Users in the UI and the API.
 * Separate Team Member password policy from App Users.
-* Update Team Member password at tenant create to include all OWASP special characters.
-* Enhance default user schema.
-* Searchable User endpoint
+* Update the policy for Team Members to include [OWASP password special characters](https://www.owasp.org/index.php/Password_special_characters).
+* Enhance default user schema; we're working towards consistency with SCIM 2 standards.
+* Searchable User endpoint.
