@@ -10,4 +10,5 @@ steps:
     description: Check for broken links
     image: 18fgsa/html-proofer
     cmd:
+      - --empty-alt-ignore
       - ./_site
