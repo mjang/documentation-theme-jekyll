@@ -2,7 +2,7 @@
 
 https://forgecloud.github.io/
 
-This is the Early Access developer docs site for the ForgeRock Identity Cloud. This project uses Jekyll to generate HTML files from markdown. 
+This is the Early Access developer docs site for the ForgeRock Identity Cloud. This project uses Jekyll to generate HTML files from markdown.
 
 
 ## Setup
@@ -25,7 +25,7 @@ $ bundle exec jekyll serve
 
 * Learn Jekyll with step-by-step tutorials and videos at [Jekyll Tips](http://jekyll.tips/).
 * Jekyll cheat sheet [Jekyll Cheat Sheet](https://learn.cloudcannon.com/jekyll-cheat-sheet/).
-* http://127.0.0.1:4000/samples/sample-page/ folder contains some examples of urls, links and formatting
+* http://127.0.0.1:4000/samples/sample-page/ folder contains examples of URLs, links, and formatting.
 
 ### Documentation pages
 
@@ -37,7 +37,7 @@ $ bundle exec jekyll serve
 
 * Add, update or remove change log entries from your posts.
 * Tag entries as minor or major in the front matter.
-* Adding items to the changelog will automatically generate the xml file for the RSS feed.
+* Adding items to the changelog will automatically generate the XML file for the RSS feed.
 
 ### Search
 
@@ -46,18 +46,26 @@ $ bundle exec jekyll serve
 ### Navigation
 
 * Change `site.show_full_navigation` to control all or only the current navigation group being open.
-* Sort order of navigation top level groups is determined by `category-order` on the sub-pages
+* Sort order of navigation top level groups is determined by `category-order` on the sub-pages.
 * Add `excluded_in_navigation: true` to any documentation page's front matter to exclude that category in the navigation - see example on 'samples' page.
 
 ### CSS
 * ForgeRock styles are layered on top of the base template. You can update variables in `css\main.scss` and add styles in `_sass\forgerock.scss`. Do not edit any of the underlying styles directly.
 
 ### Icons
-* Uses google hosted material design icon font [Material Design Icons](https://material.io/icons/)
-* Uses [jekyll-octicons](https://github.com/primer/octicons/tree/master/lib/jekyll-octicons). Info on available icons can be found at [https://octicons.github.com/](https://octicons.github.com/)
+* Uses google hosted material design icon font [Material Design Icons](https://material.io/icons/).
+* Uses [jekyll-octicons](https://github.com/primer/octicons/tree/master/lib/jekyll-octicons). Info on available icons can be found at [https://octicons.github.com/](https://octicons.github.com/).
+
+### Style Linter
+
+You can now test changes with a lightweight custom implementation of the [Vale](https://github.com/errata-ai/vale) syntax-aware prose linter. It does not yet include most elements of the internal ForgeRock style guide.
+
+Once you've installed `vale` as described in the [Vale](https://github.com/errata-ai/vale) GitHub repository, you can use it to check the syntax of the file of your choice. For example, to review the syntax of the [Architecture](https://developer-cloud.forgerock.com/overview/architecture/) overview page, navigate to the path of this repository and run the following command:
+
+$ `vale _docs/overview/architecture.md`
 
 ## To Do
 
-- Fix site icon and touch-icon
-- Consider breaking out forgerock variables from main.scss
-- Fix google analytics
+- Fix site icon and touch-icon.
+- Consider breaking out forgerock variables from main.scss.
+- Fix google analytics.
