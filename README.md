@@ -64,6 +64,16 @@ Once you've installed `vale` as described in the [Vale](https://github.com/errat
 
 $ `vale _docs/overview/architecture.md`
 
+### PlantUML
+
+Jekyll supports the use of the [PlantUML](http://plantuml.com/) sequence diagram tool. As we use PlantUML in our product and platform docs, it's a useful feature especially when describing OAuth2 / OIDC sequences. 
+
+To set up PlantUML, you'll need:
+- PlantUML Gem
+- *plantuml.jar* 
+- A script named *plantuml* that refers to the JAR file, with `java -jar /usr/local/bin/plantuml.jar "$1" "$2"`
+- Include the jekyll-plantuml gem in the following files: _config.yml and GEMFILE.
+
 ## To Do
 
 - Fix site icon and touch-icon.
