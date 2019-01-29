@@ -73,6 +73,7 @@ To set up PlantUML, you'll need:
 - *plantuml.jar* 
 - A script named *plantuml* that refers to the JAR file, with `java -jar /usr/local/bin/plantuml.jar "$1" "$2"`
 - Include the jekyll-plantuml gem in the following files: _config.yml and GEMFILE.
+- [GraphViz](https://www.graphviz.org/) graph visualization software.
 
 ## To Do
 
