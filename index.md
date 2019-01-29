@@ -3,48 +3,55 @@ title: About Early Access
 ---
 
 
-## Welcome! 
+## Welcome!
 
 
-The ForgeRock Identity Cloud is an identity and access management service allowing developers to quickly and easily integrate authentication and identity management into their applications. 
+The ForgeRock Identity Cloud is an identity and access management solution. It
+can help you integrate authentication and authorization into your applications.
 
-Some stuff you can do...
+With the ForgeRock Identity Cloud, you can:
 - Register and authenticate users into your applications.
 - Set up and configure hosted login and registration pages.
-- Set password policy.
-- Reset passwords and send users through forgot password flows.
-- Create users via the admin console or management APIs.
+- Configure password policy.
+- Reset passwords and configure forgotten password workflows.
+- Create users via the Admin Console (UI) or through our APIs.
 
-This is just the starting set of features - we're working hard to build out the right functionality by collecting early feedback from customers. **This is where you come in!**
+We want your feedback so we can include more of the functionality that you need.
 
-### What to expect
-
-
-- You'll be able to directly influence features and product direction.
-
+### Expectations
+- You can influence features and product direction.
 - You'll have direct access to product and engineering.
-
-- You'll be able to provide direct feedback from within the app.
-
+- You can provide feedback from within the app.
 
 
-### Things to note
+### Notes
 
 
-- We'll strive to keep documentation updated, but you can expect unannounced breaking changes as we develop quickly.
+We've created this site solely for testing. Do not use any apps created
+here in production. In addition:
 
-- We may stop or pause access to the Early Access at any point.
+- Do *not* add real customer data.
+- Do review our progress. Tell us what we did right (or wrong).
+- Do expect hiccups in reliability and stability; this is early access, after
+all.
+- Do review our documentation. While we'll strive to keep our documentation up
+to date, you can expect unannounced changes as our development progresses.
 
-- You'll encounter bugs and there will be reliability and stability hiccups.
+We may pause or stop the Early Access program at any time.
 
-- The EA site is not meant to be used in production, but is for you to kick the tires and tell us what you think we did right (or more likely what we did wrong).
+### Feedback
 
-- You should not put any real customer data into the system. 
+We'd appreciate your feedback. Tell us what works (and what does not work). We
+can then create a product better suited to your needs.
 
-- You can keep up to date with the latest changes on the [changelog]({{ site.baseurl }}/changelog/) page. You'll also be able to opt-in to receive release emails.
+- We encourage you to report what you like (as well as any bugs that you see) at
+[ea.cloud@forgerock.com](ea.cloud@forgerock.com).
+- You can also report your observations directly through the feedback icon in
+the lower right corner of the apps that you create.
+- Review our [changelog]({{ site.baseurl }}/changelog/).
+- To receive email updates, tell us at [ea.cloud@forgerock.com](ea.cloud@forgerock.com).
 
-
-Now you know what it's all about let's get going! Don't be shy about feedback - the more we hear from you about what works and what doesn't, the better the features you care about will be.
+<br>
 
 > <p class="center"><a href="https://ea.forgeblocks.com/auth" target="_blank">Log in</a> to the admin console and get started!</p>
 > <p class="center"><a href="{{ site.baseurl }}/quickstarts/web-app" class="btn btn-secondary"><i class="material-icons">computer</i>create a web app</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ site.baseurl }}/quickstarts/manage-users" class="btn btn-secondary"><i class="material-icons">code</i> management API</a></p><br>
