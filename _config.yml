@@ -29,6 +29,7 @@ gems:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-octicons
+  - jekyll-plantuml
 
 exclude:
   - Gemfile

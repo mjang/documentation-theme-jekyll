@@ -121,6 +121,8 @@ GEM
     jekyll-optional-front-matter (0.1.2)
       jekyll (~> 3.0)
     jekyll-paginate (1.1.0)
+    jekyll-plantuml (1.3.3)
+      jekyll (> 2.0)
     jekyll-readme-index (0.0.4)
       jekyll (~> 3.0)
     jekyll-redirect-from (0.12.1)
@@ -223,6 +225,7 @@ DEPENDENCIES
   jekyll (= 3.3.1)
   jekyll-feed (= 0.8.0)
   jekyll-octicons
+  jekyll-plantuml
   jekyll-seo-tag (= 2.1.0)
   jekyll-sitemap (= 1.0.0)
 
