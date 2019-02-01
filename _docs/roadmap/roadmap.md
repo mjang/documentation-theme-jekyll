@@ -21,9 +21,9 @@ excluded_in_navigation: true
 #### Latest
 <br>
 You can now:
-* Invite Team Members to manage an organization, as described in the following page: [Team Members and App Users](({{ site.baseurl }}/reference/reference-users)).
-* Configure [Email Templates](({{ site.baseurl }}/quickstarts/email-templates)).
-* Use `auth_code`{: .plain} flow without hosted pages, as described in the [Applications](({{ site.baseurl }}/overview/applications)) page.
+* Invite Team Members to manage an organization, as described in the following page: [Team Members and App Users]({{ site.baseurl }}/reference/reference-users).
+* Configure [Email Templates]({{ site.baseurl }}/quickstarts/email-templates).
+* Use `auth_code`{: .plain} flow without hosted pages, as described in the [Applications]({{ site.baseurl }}/overview/applications) page.
 
 <br>
 
@@ -31,7 +31,7 @@ You can now:
 
 <br>
 
-You can read more about these features in the following section: [Team Members and App Users]({{ site.baseurl }}/reference/reference-users).
+You can read more about these features in the following page: [Team Members and App Users]({{ site.baseurl }}/reference/reference-users).
 
 * Split Team Members and App Users in the UI and the API.
 * Separate Team Member password policy from App Users.
