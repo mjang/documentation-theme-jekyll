@@ -45,11 +45,11 @@ We'd appreciate your feedback. Tell us what works (and what does not work). We
 can then create a product better suited to your needs.
 
 - We encourage you to report what you like (as well as any bugs that you see) at
-[ea.cloud@forgerock.com](ea.cloud@forgerock.com).
+[ea.cloud@forgerock.com](mailto:ea.cloud@forgerock.com).
 - You can also report your observations directly through the feedback icon in
 the lower right corner of the apps that you create.
 - Review our [changelog]({{ site.baseurl }}/changelog/).
-- To receive email updates, tell us at [ea.cloud@forgerock.com](ea.cloud@forgerock.com).
+- To receive email updates, tell us at [ea.cloud@forgerock.com](mailto:ea.cloud@forgerock.com).
 
 <br>
 
