@@ -12,6 +12,8 @@ excluded_in_navigation: true
 * Additional email templates.
 * Authentication trees.
 * API Scopes.
+* Client Side App.
+* Native App.
 
 
 ### Completed

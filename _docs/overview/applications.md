@@ -32,6 +32,8 @@ OAuth 2.0 works with two different client types, as defined in
 
 Each of these apps require different authorization flows, based on their grant types. When you register your app in the ForgeRock admin console we will set the appropriate grant types for you.
 
+_**Note:** We're working on more app types. Watch the **Work In Progress** and **Completed** sections of our [Roadmap]({{ site.baseurl }}/roadmap/roadmap/) for more information._
+
 **Grant Types**
 
 As defined in RFC6749, OAuth 2.0 explicitly defines four grant types:
