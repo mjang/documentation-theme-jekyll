@@ -6,46 +6,56 @@ order: 2
 ---
 
 
-
-The management API allows you to configure and read information about stored entities like users and apps. We've created [postman collections]({{ site.baseurl }}/apis/apis) describing the APIs and allowing you easily test calls. For this quick start we'll just use the terminal and run some CURL commands. 
+Use the management API to configure and read information about stored entities like users and apps. We've created [Postman collections]({{ site.baseurl }}/apis/apis) that describe the APIs and allow you to test different REST calls. For this quick start tutorial, we'll use the terminal to run some REST calls with cURL.
 
 ### Creating a user
 
-To create a user first we need to get a token that authorizes us to update the user, then we'll use this token to call the user endpoint and create the user.
+Before you can create a user, you'll need an access token, available through the Authentication API. With that token, you can create users with the Management API through the `users` endpoint.
 
-1. In the Admin console go to Applications > New Application and create a 'Service App'. Give it a name and click 'Save'.
+1. In the Admin console go to Applications > New Application and create a **Web App** or a **Service App**. Give it a name and select Save.
 
-1. Copy the "client id" and "secret".
+1. Make a copy of the **Client ID** and **Client Secret**.
 
-1. In your terminal base64 encode the client id and secret by running the command below.
+1. Base64-encode your Client ID and Client Secret. One way to do so is with the following command:
 
     ```
-    echo -n CLIENT_ID:SECRET | base64
+    echo -n CLIENT_ID:CLIENT_SECRET | base64
     ```
-1. Copy the command below
-    - Replace 'BASE_64_ENCODED_STRING' 
-    - Replace 'YOUR_TENANT_NAME' 
+1. In the following REST call, replace:
+    - 'BASE_64_ENCODED_STRING'
+    - 'YOUR_TENANT_NAME'
 
-    Then run the command in the terminal.
+Then, run the custom command in your terminal.
 
     ```
     curl -X POST \
-    https://openam-YOUR_TENANT_NAME.forgeblocks.com/openam/oauth2/access_token \
+    https://openam-YOUR_TENANT_NAME.forgeblocks.com/oauth2/access_token \
     -H 'Authorization: Basic BASE_64_ENCODED_STRING' \
     -H 'Cache-Control: no-cache' \
     -H 'Content-Type: application/x-www-form-urlencoded' \
     -d 'scope=api.forgecloud.com:user.read api.forgecloud.com:user.write&grant_type=client_credentials'
-        
+
     ```
 
-   #### Note the scopes!
-    We are telling the authorization server to mint a token that will allow us to read and update users.
+The output includes a long value for `access_token`. In several other ForgeRock Identity Cloud REST calls, you'll see the following entry:
 
-1. Now we can call the Management API to create a user using the access_token we just got. Copy the command below.
-    - Replace 'ACCESS_TOKEN'
-    - Replace 'YOUR_TENANT_NAME' 
+```
+ --header "Authorization: Bearer "
+```
 
-    Then run the command in the terminal.
+The `access_token` is also known as the bearer token. To run these REST calls, you'd include the value of the `access_token` within the quotes, after `Bearer`.
+
+#### Note the scopes!
+
+The ForgeRock Identity Cloud creates an access token that allows you to read (`user.read`) and update (`user.write`) user information.
+
+
+
+1. Use the Management API to create a user using the newly minted access_token. In the following command, substitute your values for:
+    - 'ACCESS_TOKEN'
+    - 'YOUR_TENANT_NAME'
+
+Then run the command in the terminal.
 
     ```
     curl -X POST \
@@ -122,22 +132,23 @@ To create a user first we need to get a token that authorizes us to update the u
   }'
     ```
 
-1. That's it! check out the user in the UI to see what's there. We don't show all of the possible user fields in the UI, only the primary ones. You can use the management API to add additional data to the user.
+1. That's it! Review the user entry the UI. Note how the UI doesn't show every user detail. You can use the management API to review, add, or revise data for this or all users.
 
-### Where to go from here
+For the next steps, save the `id` of the new user.
 
-1. Head over to the [API]({{ site.baseurl }}/apis/apis) section and download the calls into postman. 
-1. Try updating the user you just created using the id returned from the create user call.
-1. Try updating other endpoints in the system. Don't forget to ask for the right scopes when you call the authorization endpoint to get the token. The token is minted based on the scopes you've asked for.
+### Next Steps
 
+1. Navigate to the [REST APIs]({{ site.baseurl }}/apis/apis) page. Download the Postman collection.
+1. Update the user you just created. Find the `id` returned from the REST call you ran to create the user.
+1. Try running REST calls on other `users` endpoints.
+1. If you want different permissions, create a new `access_token` with desired scopes.
+
+### Available Scopes
 ```
-api.forgecloud.com:user.read 
+api.forgecloud.com:user.read
 api.forgecloud.com:user.write
-api.forgecloud.com:app.read 
-api.forgecloud.com:app.write 
-api.forgecloud.com:password-policy.read 
+api.forgecloud.com:app.read
+api.forgecloud.com:app.write
+api.forgecloud.com:password-policy.read
 api.forgecloud.com:password-policy.write
 ```
-
-
-

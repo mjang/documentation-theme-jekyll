@@ -1,5 +1,5 @@
 ---
-title: ForgeRock Identity Gateway 
+title: ForgeRock Identity Gateway
 category: Identity Gateway
 excluded_in_navigation: true
 category-order: 5
@@ -13,9 +13,9 @@ The ForgeRock Identity Gateway (IG) is an API & web application security gateway
 
 - **Simplicity:** Implement policy enforcement and API security in one place.
 
-- **Consistency:** If you have 100's of apps 100 you can implement security in the gateway instead of the application itself. Any changes to enforcement can be made in the gateway avoiding the need to update code in multiple places. 
+- **Consistency:** If you have hundreds of apps, you can implement security in the gateway, instead of the application itself. Any changes to enforcement can be made in the gateway, avoiding the need to update code in multiple places.
 
-- **Legacy Integration:** Onboard applications and legacy APIs that have non-standard authentication methods or older protocols without updating the applications. 
+- **Legacy Integration:** Onboard applications and legacy APIs with non-standard authentication methods or older protocols without updating the applications.
 
 - **Future Proofing:** Protect your applications from new standards and protocols without changing the application or API itself.
 
@@ -35,20 +35,20 @@ In this quick start you will secure an API by using the ForgeRock cloud to autho
 1. In IG Studio enable authorization for the route so IG acts as an OAuth2.0 resource server.
 1. In IG Studio configure OAuth2 authorization
     - **Access token resolver:** "OAuth 2.0 introspection endpoint"
-    - **Introspection endpoint URI:** https://openam-{TENANT_NAME}.forgeblocks.com/openam/oauth2/introspect`
+    - **Introspection endpoint URI:** https://openam-{TENANT_NAME}.forgeblocks.com/oauth2/introspect`
     - **Client name:** The client ID from the Service App you created in Identity Cloud Admin.
     - **Client secret:** The client secret from the Service App you created in Identity Cloud Admin.
     - **Evaluate scopes:** Statically.
     - **Scopes:** Scopes to be enforced for this route.
 1. Deploy the route
 
-#### Test the Route is Protected 
+#### Test the Route is Protected
 
 1. Hit to the endpoint "http://ig.example.com:14080/api"
-1. Login 
+1. Log in
 
 
 ### Secure your Web App
 In this quick start you will secure your web app by using the ForgeRock cloud to authorize access.
 
-1. 
+1.
