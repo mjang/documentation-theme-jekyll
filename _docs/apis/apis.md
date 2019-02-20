@@ -12,6 +12,33 @@ We've created Postman collections describing the APIs. If you've already install
 
 _**Note:** You can also download our Postman collections from our [SaaS-Postman](https://github.com/ForgeCloud/SaaS-Postman) repository._
 
+### Understanding the Environment
+
+The REST calls associated with our APIs require information that you may not have readily available. Before running the REST calls in our Postman collections, prepare the following information:
+
+* `client_id`{: .plain}: The Client ID of your App.
+* `client_secret`{: .plain}: The Client Secret of your App.
+* The base64-encoded value of `client_id:client_secret`{: .plain}, which you can find with the following command:
+{% include base64_encode.html %}
+
+You can then include that base64-encoded value in REST calls that require it. In the following excerpt, you'd substitute that value for the `BASE_64_ENCODED_STRING`{: .plain}:
+
+`--header "Authorization: Basic BASE_64_ENCODED_STRING"`{: .plain}
+
+As the Client ID and Client Secret varies by app, the base64-encoded value of `client_id:client_secret`{: .plain} will also vary.
+
+You'll also need to keep track of the following properties:
+
+* `access_token`{: .plain}: Every app and account that you work with gets different access tokens.
+* `id`{: .plain}: Every user gets a unique ID.
+* `id_token`{: .plain}: To end the session for a specific user, you'll need that user's ID Token.
+
+You can then include the value of that *access_token* in REST calls that require it, as suggested by the following excerpt:
+
+`--header "Authorization: Bearer *access_token*"`{: .plain}
+
+_**Note:** When you see a requirement for an access_token, be careful. That property varies by app and account._
+
 ### Authentication API
 Allows you to authenticate and authorize users and apps or assign to access the Management API.
 <a href="https://documenter.getpostman.com/view/2758124/Rzn8Pgwy" target="_blank">Explore the Authentication API</a>
