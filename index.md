@@ -16,12 +16,12 @@ With the ForgeRock Identity Cloud, you can:
 - Reset passwords and configure forgotten password workflows.
 - Create users via the Admin Console (UI) or through our APIs.
 
-We want your feedback so we can include more of the functionality that you need.
+We want your feedback so we can include more of the functionality that you need. Sign up at [www.forgerock.com/idaas](https://www.forgerock.com/idaas).
 
 ### Expectations
 - You can influence features and product direction.
 - You'll have direct access to product and engineering.
-- You can provide feedback from within the app.
+- You can provide feedback from within the app through the Intercom icon in the lower-right corner of the app.
 
 
 ### Notes
