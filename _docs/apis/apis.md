@@ -49,15 +49,6 @@ Allows you to manage users and other objects in the system. To access the manage
 
 You can also filter users with the management API. Check out the user endpoint [filtering parameters]({{ site.baseurl }}/apis/apis-filtering/).
 
-_**Note:** When using the Authentication API, use appropriate scopes. The access token you get will have the right permissions for the management API._
-
-```
-api.forgecloud.com:user.read
-api.forgecloud.com:user.write
-api.forgecloud.com:app.read
-api.forgecloud.com:app.write
-api.forgecloud.com:password-policy.read
-api.forgecloud.com:password-policy.write
-```
+_**Note:** When using the Authentication API, use appropriate [scopes]({{ site.baseurl }}/reference/scopes/). The access token you get will have the right permissions for the management API._
 
 <br>

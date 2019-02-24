@@ -23,8 +23,9 @@ excluded_in_navigation: true
 #### Latest
 <br>
 You can now:
+* Include [scopes]({{ site.baseurl }}/reference/scopes) for password reset and user profile management.
 * Invite Team Members to manage an organization.
-* Configure [Email Templates]({{ site.baseurl }}/quickstarts/email-templates).
+* Configure [Email Templates]({{ site.baseurl }}/quickstarts/email-templates).({{ site.baseurl }}/reference/scopes)
 * Use `auth_code`{: .plain} flow without hosted pages, as described in the [Applications]({{ site.baseurl }}/overview/applications) page.
 
 [comment]: <> (Future: add this to Team Members bullet: , as described in the following page: [Team Members and App Users]({{ site.baseurl }}/reference/reference-users).)
