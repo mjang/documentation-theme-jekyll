@@ -141,14 +141,4 @@ For the next steps, save the `id` of the new user.
 1. Navigate to the [REST APIs]({{ site.baseurl }}/apis/apis) page. Download the Postman collection.
 1. Update the user you just created. Find the `id` returned from the REST call you ran to create the user.
 1. Try running REST calls on other `users` endpoints.
-1. If you want different permissions, create a new `access_token` with desired scopes.
-
-### Available Scopes
-```
-api.forgecloud.com:user.read
-api.forgecloud.com:user.write
-api.forgecloud.com:app.read
-api.forgecloud.com:app.write
-api.forgecloud.com:password-policy.read
-api.forgecloud.com:password-policy.write
-```
+1. If you want different access privileges, create a new `access_token` with desired [scopes]({{ site.baseurl }}/reference/scopes). As you're limited to the scopes configured for your app, find your app at https://ui-{{tenantName}}.forgeblocks.com/apps/, and review the appropriate API Scopes tab.
