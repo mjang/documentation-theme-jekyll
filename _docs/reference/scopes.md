@@ -25,7 +25,6 @@ In support of these requirements, ForgeRock includes custom scopes as defined he
     - apps.read
     - apps.update
     - apps.delete
-    - apps.refresh-secret  
 <br>
 
  - **/email-templates**: Templates for new users, password reset, and account verification.
@@ -53,7 +52,7 @@ In support of these requirements, ForgeRock includes custom scopes as defined he
 
  - **/me/update-password**: Password updates for the current logged in user.
 
-    - me.password  
+    - me.update-password  
 <br>
 
 - **/password-policy**: Global password policy configuration.
@@ -78,3 +77,8 @@ In support of these requirements, ForgeRock includes custom scopes as defined he
 - **/users/recover-username**: Username recovery.
 
    - user.recover-username
+
+You can manage these scopes from the UI. Log into https://ui-\{\{tenantName}}.forgeblocks.com. Sign in as a team member. Navigate to and select an application. You'll see available and selected scopes under an **API Scopes** tab:
+
+![]({{ site.baseurl }}/images/scopes.png)
+{: .plain-blockquote}
