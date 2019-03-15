@@ -39,7 +39,7 @@ To get a new access token, run a POST on the /access_token endpoint with a refre
 
 To see how this works, refer to the POST for a Password Grant
 on the ```/oauth2/access_token``` endpoint in the
-[Authentication API](https://documenter.getpostman.com/view/2758124/Rzn8Pgwy#da41328c-3b59-42c7-a23b-745fe1ea043e).
+[Authentication API](https://developer-api.forgerock.com/#316c2802-6751-44c8-b8a0-7dca67e33aa5).
 
 
 ### Additional Reading

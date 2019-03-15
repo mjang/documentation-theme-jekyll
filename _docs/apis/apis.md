@@ -8,9 +8,9 @@ order: 1
 
 There are two APIs for the ForgeRock Identity Cloud - the **Authentication API** and the **Management API**.
 
-We've created Postman collections describing the APIs. If you've already installed Postman ([download here](https://www.getpostman.com/apps)), navigate to our page with [Postman APIs](https://documenter.getpostman.com/view/2758124/Rzn8Pgwy#intro). Select the 'Run Postman' button in the top right of the screen. This should open our collection in your instance of Postman.
+We've created Postman collections describing the APIs. If you've already installed Postman ([download here](https://www.getpostman.com/apps)), navigate to our page with [Postman APIs](https://developer-api.forgerock.com). Select the 'Run Postman' button in the top right of the screen. This should open our collection in your instance of Postman.
 
-_**Note:** You can also download our Postman collection from our [SaaS-Postman](https://github.com/ForgeCloud/SaaS-Postman) repository._
+_**Note:** You can also download our Postman collection and environment from our [SaaS-Postman](https://github.com/ForgeCloud/SaaS-Postman) repository._
 
 _**Warning:** Some of the calls in our Postman collection won't work until you create a web app. You can build your own web app. If you need guidance, start with our sample [Node.js SDK]({{ site.baseurl }}/sdks/nodejs/) app. You can use our sample app as a template, to see how to incorporate this functionality into your app._
 
@@ -44,13 +44,13 @@ You can then include the value of that *access_token* in REST calls that require
 _**Note:** When you see a requirement for an access_token, be careful. That property varies by app and account._
 
 
-### Authentication API
-Allows you to authenticate and authorize users and apps or assign to access the Management API.
-<a href="https://documenter.getpostman.com/view/2758124/Rzn8Pgwy" target="_blank">Explore the Authentication API</a>
+### Authentication APIs
+Supports authentication of users to access apps. To review available REST calls, see our Postman documentation on
+<a href="https://developer-api.forgerock.com/#8eec1175-0ced-4b72-8b1a-ced836167c87" target="_blank">Authentication APIs</a>
 
 
 ### Management API
-Allows you to manage users and other objects in the system. To access the management API, use the authentication API to get an access token. You can then include that access token for your calls to the management API.  <a href="https://documenter.getpostman.com/view/2758124/Rzn8Pgwy#54d694b2-9982-4d8a-b2c7-0a99315b1eb7" target="_blank">Explore the Management API</a>.
+Allows you to manage users and other objects in the system. To access the management API, use the authentication API to get an access token. You can then include that access token for your calls to the management API.  <a href="https://developer-api.forgerock.com/#316c2802-6751-44c8-b8a0-7dca67e33aa5" target="_blank">Explore the Management API</a>.
 
 You can also filter users with the management API. Check out the user endpoint [filtering parameters]({{ site.baseurl }}/apis/apis-filtering/).
 
