@@ -10,7 +10,10 @@ There are two APIs for the ForgeRock Identity Cloud - the **Authentication API**
 
 We've created Postman collections describing the APIs. If you've already installed Postman ([download here](https://www.getpostman.com/apps)), navigate to our page with [Postman APIs](https://documenter.getpostman.com/view/2758124/Rzn8Pgwy#intro). Select the 'Run Postman' button in the top right of the screen. This should open our collection in your instance of Postman.
 
-_**Note:** You can also download our Postman collections from our [SaaS-Postman](https://github.com/ForgeCloud/SaaS-Postman) repository._
+_**Note:** You can also download our Postman collection from our [SaaS-Postman](https://github.com/ForgeCloud/SaaS-Postman) repository._
+
+_**Warning:** Some of the calls in our Postman collection won't work until you create a web app. You can build your own web app. If you need guidance, start with our sample [Node.js SDK]({{ site.baseurl }}/sdks/nodejs/) app. You can use our sample app as a template, to see how to incorporate this functionality into your app._
+
 
 ### Understanding the Environment
 
@@ -21,11 +24,12 @@ The REST calls associated with our APIs require information that you may not hav
 * The base64-encoded value of `client_id:client_secret`{: .plain}, which you can find with the following command:
 {% include base64_encode.html %}
 
-You can then include that base64-encoded value in REST calls that require it. In the following excerpt, you'd substitute that value for the `BASE_64_ENCODED_STRING`{: .plain}:
+As the Client ID and Client Secret varies by app, the base64-encoded value of `client_id:client_secret`{: .plain} will also vary. The REST calls that require base64-encoded information include the Client ID and Client Secret under Authorization, as shown here:
 
-`--header "Authorization: Basic BASE_64_ENCODED_STRING"`{: .plain}
+> ![]({{ site.baseurl }}/images/base64_basic_auth.png)
+{: .plain-blockquote}
 
-As the Client ID and Client Secret varies by app, the base64-encoded value of `client_id:client_secret`{: .plain} will also vary.
+Postman then calculates the base64-encoded value of `client_id:client_secret`{: .plain}, and includes it in the target REST call.
 
 You'll also need to keep track of the following properties:
 
@@ -38,6 +42,7 @@ You can then include the value of that *access_token* in REST calls that require
 `--header "Authorization: Bearer *access_token*"`{: .plain}
 
 _**Note:** When you see a requirement for an access_token, be careful. That property varies by app and account._
+
 
 ### Authentication API
 Allows you to authenticate and authorize users and apps or assign to access the Management API.
