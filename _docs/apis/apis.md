@@ -19,10 +19,12 @@ _**Warning:** Some of the calls in our Postman collection won't work until you c
 
 The REST calls associated with our APIs require information that you may not have readily available. Before running the REST calls in our Postman collections, prepare the following information:
 
-* `client_id`{: .plain}: The Client ID of your App.
-* `client_secret`{: .plain}: The Client Secret of your App.
-* The base64-encoded value of `client_id:client_secret`{: .plain}, which you can find with the following command:
-{% include base64_encode.html %}
+* `tenantName`{: .plain}: which you included when you signed up for ForgeRock Identity Cloud.
+* `yourAppUrl`{: .plain}: the URL for your web app. This defaults to http://localhost:9080/, based on our sample web app disucssed in the following section: [SDKs: Web App (Node.js SDK)]({{ site.baseurl }}/sdks/nodejs/).
+* `accessToken`{: .plain}: which you can find in the Developer Console after logging into ui-`tenantName`.forgeblocks.com.
+* `client_id`{: .plain} and `client_secret`{: .plain} (for your web app): we've configured Postman to process these into a Base64-encoded format for authentication.
+* `serviceAppClientId`{: .plain} and `serviceAppClientSecret`{: .plain} (for your service [M2M] app): Postman processes these values in the same way as client_id and client_secret.
+* `scopes`{: .plain}: for more information, see our documentation on [Scopes]({{ site.baseurl }}/reference/scopes/).
 
 As the Client ID and Client Secret varies by app, the base64-encoded value of `client_id:client_secret`{: .plain} will also vary. The REST calls that require base64-encoded information include the Client ID and Client Secret under Authorization, as shown here:
 
@@ -31,10 +33,10 @@ As the Client ID and Client Secret varies by app, the base64-encoded value of `c
 
 Postman then calculates the base64-encoded value of `client_id:client_secret`{: .plain}, and includes it in the target REST call.
 
-You'll also need to keep track of the following properties:
+We've set up scripts within Postman which consume the output of some REST calls as input to others, as the following properties:
 
-* `access_token`{: .plain}: Every app and account that you work with gets different access tokens.
-* `id`{: .plain}: Every user gets a unique ID.
+* `access_token`{: .plain}: Varies depending on whether its for a user or an app, and the applicable scopes. That's why you may see separate properties for `accessToken`{: .plain} and `userAccessToken`{: .plain}.
+* `refresh_token`{: .plain}: May be used to get a new access_token.
 * `id_token`{: .plain}: To end the session for a specific user, you'll need that user's ID Token.
 
 You can then include the value of that *access_token* in REST calls that require it, as suggested by the following excerpt:
