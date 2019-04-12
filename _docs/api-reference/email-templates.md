@@ -1,8 +1,8 @@
 ---
 title: Email Templates 
-category: Quick Starts
-category-order: 2
-order: 3
+category: API Reference
+category-order: 6
+order: 2
 ---
 
 ForgeRock allows you to design custom emails triggered by user account activity. 

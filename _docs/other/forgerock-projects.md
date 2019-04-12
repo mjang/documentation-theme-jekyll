@@ -1,7 +1,7 @@
 ---
 title: Open Banking
 category: ForgeRock Projects
-category-order: 6
+category-order: 7
 order: 1
 ---
 
