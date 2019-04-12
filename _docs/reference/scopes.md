@@ -1,7 +1,7 @@
 ---
 title: Scopes
 category: Reference
-category-order: 5
+category-order: 6
 order: 3
 datatable: true
 ---
@@ -19,23 +19,32 @@ Implementation can get complex, depending on authorization requirements.
 
 _**Note:** Before you can configure scopes, you must enable the **Client Credentials** grant type in the advanced settings for your app.._
 
-Based on the OpenID Connect (OIDC) specification, scopes may include:
+### OIDC Scopes
 
- - **openid**: A required scope for an OpenID Connect request, as defined in
- the [OpenID Connect Specification, Authentication Request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest).
+Apps can use OpenID Connect (OIDC) scopes to access user information such as *name*, *email*, and *phone_number*. 
 
-The remaining scopes shown here are defined in the
-[OpenID Connect Specification on Requesting Claims using Scope Values](https://openid.net/specs/openid-connect-core-1_0.html#ScopeClaims):
+OIDC requests **must** include the following scope:
 
- - **profile** requests the following **claims*: *name*, *family_name*, *given_name*,
- *middle_name*, *nickname*, *picture*, and *updated_at*.
+ - **openid**
 
- - **email** asks for the *email* and *email_verified* claims.
+OIDC requests can also include the following scopes, which are associated with the following *voluntary* claims. 
 
- - **address** asks for the *address* claim.
+ - **profile**: *name*, *given_name*, *family_name*, *middle_name*, *nickname*, *profile*, *picture*, *zoneinfo*, *locale*, *updated_at*
 
- - **phone** requests the *phone_number* claim.
+ - **email**: *email*, *email_verified*
 
+ - **address**: *address*
+
+ - **phone**: *phone_number*
+
+A *voluntary* claim does not have to be included. For example, if you ask for information about a user without a *middle_name*, the app does not have to return that claim for the user. 
+
+You can manage these scopes from the UI. Log into https://ui-\{\{tenantName}}.forgeblocks.com. Sign in as a team member. Navigate to and select an application. You'll see available and selected scopes under an **API Scopes** tab:
+
+![]({{ site.baseurl }}/images/scopes.png)
+{: .plain-blockquote}
+
+### Custom Scopes
 
 ForgeRock also includes custom scopes as defined here. The scopes that you may use depend on the endpoint. The scopes are shown in the following format: `(entity).(action)`{: .plain}.
 
@@ -98,7 +107,9 @@ ForgeRock also includes custom scopes as defined here. The scopes that you may u
 
    - user.recover-username
 
-You can manage these scopes from the UI. Log into https://ui-\{\{tenantName}}.forgeblocks.com. Sign in as a team member. Navigate to and select an application. You'll see available and selected scopes under an **API Scopes** tab:
+### More Information
 
-![]({{ site.baseurl }}/images/scopes.png)
-{: .plain-blockquote}
+If you want more information on OIDC Scopes, see:
+
+- [OpenID Connect Specification, Authentication Request](https://openid.net  /specs/openid-connect-core-1_0.html#AuthRequest)
+- [OpenID Connect Specification on Requesting Claims using Scope Values](https:/  /openid.net/specs/openid-connect-core-1_0.html#ScopeClaims)
