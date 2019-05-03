@@ -2,7 +2,7 @@
 title: Team Members and App Users
 category: Reference
 excluded_in_navigation: true
-category-order: 5
+category-order: 6
 order: 2
 ---
 

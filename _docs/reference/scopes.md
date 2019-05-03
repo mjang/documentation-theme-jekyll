@@ -111,5 +111,5 @@ ForgeRock also includes custom scopes as defined here. The scopes that you may u
 
 If you want more information on OIDC Scopes, see:
 
-- [OpenID Connect Specification, Authentication Request](https://openid.net  /specs/openid-connect-core-1_0.html#AuthRequest)
-- [OpenID Connect Specification on Requesting Claims using Scope Values](https:/  /openid.net/specs/openid-connect-core-1_0.html#ScopeClaims)
+- [OpenID Connect Specification, Authentication Request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest)
+- [OpenID Connect Specification on Requesting Claims using Scope Values](https://openid.net/specs/openid-connect-core-1_0.html#ScopeClaims)

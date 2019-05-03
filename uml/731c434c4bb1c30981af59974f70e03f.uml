@@ -1,0 +1,30 @@
+@startuml
+
+title Second Factor With Web Authentication (before registering an Authenticator)
+autonumber
+
+participant "Web App" as Client
+participant "End User" as User
+participant "FRaaS Express Edition" as Provider
+participant "Authenticator" as Authenticator
+
+User->Client: Sign in to the Web App with a username/password
+
+Client->Provider: Present credentials
+
+Provider->User: Present choice for second factor authentication/ncode delivery through email or SMS/authenticator
+
+User->Client: Choose SMS or email
+
+User->Authenticator: Confirm identity through authenticator
+
+Authenticator->Authenticator: Generate a public/private key pair
+
+Authenticator->Provider: Authenticator sends a public key to the Web App
+
+Provider->Provider: Stores a public key, with the user identity, for the authenticator
+
+Provider->Client: Signs in user
+
+
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+
+title Second Factor Authentication
+autonumber
+
+participant "Web App" as Client
+participant "End User" as User
+participant "FRaaS Express Edition" as Provider
+
+User->Client: Sign in to the Web App with a password
+
+Client->Provider: Confirm authentication
+
+Provider->User: Present choice for code delivery (email or SMS)
+
+User->Client: Specify choice for code delivery
+
+Client->User: Sends code through client selected option 
+
+User->Client: User includes the provided code
+
+Provider->Client: Authenticates user
+
+
+@enduml

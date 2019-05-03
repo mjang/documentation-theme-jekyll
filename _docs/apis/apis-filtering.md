@@ -1,7 +1,7 @@
 ---
 title: Querying Users
 category: REST APIs
-category-order: 3
+category-order: 5
 order: 2
 ---
 

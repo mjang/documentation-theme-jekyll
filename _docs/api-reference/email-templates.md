@@ -1,7 +1,7 @@
 ---
 title: Email Templates 
 category: API Reference
-category-order: 6
+category-order: 7
 order: 2
 ---
 

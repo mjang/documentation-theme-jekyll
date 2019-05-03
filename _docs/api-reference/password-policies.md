@@ -1,7 +1,7 @@
 ---
 title: Password Policies
 category: API Reference
-category-order: 6
+category-order: 7
 order: 1
 ---
 

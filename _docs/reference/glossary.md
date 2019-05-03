@@ -1,7 +1,7 @@
 ---
 title: Glossary
 category: Reference
-category-order: 5
+category-order: 6
 order: 1
 ---
 

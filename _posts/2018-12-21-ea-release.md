@@ -4,7 +4,7 @@ type: major
 ---
 
 **Features**
-* Custom [email templates]({{ site.baseurl }}/quickstarts/email-templates/) triggered on particular events.
+* Custom [email templates]({{ site.baseurl }}/api-reference/email-templates/) triggered on particular events.
 * Ability to invite team members to manage the system.
 * Recover username API.
 * Updated [app sdk]({{ site.baseurl }}/sdks/nodejs/) with in SDK auth_code flow.

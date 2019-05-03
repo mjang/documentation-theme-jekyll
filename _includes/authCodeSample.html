@@ -1,0 +1,20 @@
+<!-- Load ForgeRock SDK for JavaScript -->
+    <div id="auth-sdk-target"></div>
+    <script>(function(d, s, id) {
+        var js,
+          el = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'auth-sdk.js#version=v1.0';
+        el.parentNode.insertBefore(js, el);
+      })(document, 'script', 'auth-sdk');
+    </script>
+    <script id="auth-sdk-config" type="text/plain">
+      {
+        "clientId": "CLIENT_ID",
+        "flow": "{{ page.auth_option }}",
+        "org": "ORG_NAME",
+        "scope": "SCOPE"
+      }
+    </script>

@@ -73,6 +73,10 @@ defaults:
         type: Marks the impact of this release
 
 # -----------
+# Variables
+am_release_version: https://backstage.forgerock.com/docs/am/6.5
+
+# -----------
 # CloudCannon
 
 types:
