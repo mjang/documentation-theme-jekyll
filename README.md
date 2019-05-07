@@ -4,6 +4,10 @@ https://forgecloud.github.io/
 
 This is the Early Access developer docs site for the ForgeRock Identity Cloud. This project uses Jekyll to generate HTML files from markdown.
 
+## Work in Progress
+
+You can find the current work in progress in the `staging` branch. To review the content as shown in a browser, you'll have to pull that branch and build the doc yourself, as described in the ## Setup section.
+
 
 ## Setup
 
@@ -18,8 +22,23 @@ $ bundle install
 Run `jekyll` commands through Bundler to ensure you're using the right versions:
 
 ~~~bash
-$ bundle exec jekyll serve
+$ bundle exec jekyll serve 
 ~~~
+
+If you're trying out changes, add the `--incremental` or `-I` switch to the end of that command. When you save changes to a file, you'll see the changes when you refresh your browsser.
+
+~~~bash
+$ bundle exec jekyll serve -I
+~~~
+
+If you do not see changes after refreshing your browser, you may need to rebuild the docs. To do so, stop the `bundle exec jekyll serve` process and run the following command:
+
+~~~bash
+$ bundle exec jekyll clean
+~~~
+
+Subsequent uses of `bundle exec jekyll serve` should work.
+
 
 ### Learn about Jekyll
 
@@ -27,7 +46,7 @@ $ bundle exec jekyll serve
 * Jekyll cheat sheet [Jekyll Cheat Sheet](https://learn.cloudcannon.com/jekyll-cheat-sheet/).
 * http://127.0.0.1:4000/samples/sample-page/ folder contains examples of URLs, links, and formatting.
 
-### Documentation pages
+### Documentation page.
 
 * Add, update or remove a documentation page in the *Documentation* collection.
 * Change the category of a documentation page to move it to another section in the navigation.
@@ -37,10 +56,7 @@ $ bundle exec jekyll serve
 
 * Add, update or remove change log entries from your posts.
 * Tag entries as minor or major in the front matter.
-* Adding items to the changelog will automatically generate the XML file for the RSS feed.
-
-### Search
-
+* Adding items 
 * Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
 
 ### Navigation
