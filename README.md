@@ -39,6 +39,27 @@ $ bundle exec jekyll clean
 
 Subsequent uses of `bundle exec jekyll serve` should work.
 
+### Check for Broken Links
+
+Install the `rake` and `html-proofer` (Ruby) gems on your system.
+Add them to your bundle with `bundle install`:
+
+~~~bash
+$ gem install rake
+$ gem install html-proofer
+$ bundle install
+~~~
+
+
+Run the following commands to have `html-proofer` check for broken links on a static version of your site:
+
+~~~bash
+$ bundle exec jekyll build
+$ bundle exec htmlproofer ./_site --empty-alt-ignore
+~~~
+
+The `--empty-alt-ignore` option ignores images without <Alt> text.
+
 
 ### Learn about Jekyll
 
