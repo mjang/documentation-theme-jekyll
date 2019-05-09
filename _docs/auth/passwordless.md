@@ -83,6 +83,6 @@ To incorporate passwordless authentication, add the following code snippet to yo
 {% include warning.html content="The options associated with passwordless authentication have risks. For example:<br/> * Biometrics can be fooled via high-quality photos.<br/> * Unsolicited messages could be sent to devices registered to an account." %}
 <br>
 
-If you're familiar with OAuth 2 specifications, the Web App is the _Relying Party_, and FRaaS Express Edition is the _Authorization (or Identity) Server_.
+If you're familiar with OpenID Connect (OIDC) specifications, the Web App is the _Relying Party_, and the ForgeRock Identity Cloud is the _Authorization Server_.
 
 For more information on _WebAuthn_, see the following [document](https://www.w3.org/TR/webauthn/) from the World Wide Web Consortium (W3C).

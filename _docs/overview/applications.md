@@ -2,7 +2,6 @@
 title: Applications
 category: Overview
 order: 2
-am_release_version: https://backstage.forgerock.com/docs/am/6.5
 ---
 
 The ForgeRock Identity Cloud can help you integrate authentication and authorization into your application. The way you integrate depends on your app and how users interact with it.
@@ -14,7 +13,7 @@ and [OpenID Connect](http://openid.net/specs/openid-connect-core-1_0.html):
 * OpenID Connect provides an identity layer on top of OAuth 2.0.
 
 Briefly, with OAuth 2.0, you can set up access to your resources without sharing your account information. With OpenID Connect, a client application can read basic information about a user via REST. For more information, see the
-ForgeRock [Access Management OpenID Connect 1.0 Guide]({{ page.am_release_version}}/oauth2-guide/#openid-connect-authorization-code-flow).
+ForgeRock [Access Management OpenID Connect 1.0 Guide]({{ site.am_release_version}}/oauth2-guide/#openid-connect-authorization-code-flow).
 
 [comment]: <> (I'm not sure we even need to define OAuth 2.0 App types, but for completeness, I'm including the link)
 
@@ -71,7 +70,7 @@ for an access token.
 Refresh tokens allow your web app to get a new access token without asking that user to log in again.
 
 For a detailed flow, see the Access Management OpenID Connect 1.0 Guide section
-on [OpenID Connect Authorization Code Flow]({{ page.am_release_version}}/#openid-connect-authorization-code-flow).
+on [OpenID Connect Authorization Code Flow]({{ site.am_release_version}}/#openid-connect-authorization-code-flow).
 
 <p class="center"><br><a href="{{ site.baseurl }}/sdks/nodejs/" class="btn btn-secondary"><i class="material-icons">build</i>How To Create a Web App</a></p>
 
@@ -96,8 +95,8 @@ Authorization flows in a service app include the following grant type:
 For more information on how the ForgeRock Identity Cloud processes OAuth 2.0
 and OpenID Connect flows, see the following Access Management documents:
 
-- [OAuth 2.0 Guide]({{ page.am_release_version}}/oauth2-guide/index.html)
-- [OpenID Connect 1.0 Guide]({{ page.am_release_version}}/oidc1-guide/index.html)
+- [OAuth 2.0 Guide]({{ site.am_release_version}}/oauth2-guide/index.html)
+- [OpenID Connect 1.0 Guide]({{ site.am_release_version}}/oidc1-guide/index.html)
 
 <br>
 [Top](#top){: .float-right}

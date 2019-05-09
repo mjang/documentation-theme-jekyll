@@ -1,0 +1,32 @@
+@startuml
+
+title Authentication on Browser-based Apps With PKCE 
+autonumber
+
+participant "Web App" as Client
+participant "End User\n(Browser)" as User
+participant "FRaaS Express Edition" as Provider
+participant "Resource Server" as Resource
+
+Client->Client: Generate code verifier; create hash as a code challenge
+
+Client->User: Send code challenge and code verifier
+
+User->Provider: Authenticate and send code challenge hash
+
+Provider->Provider: Store code challenge
+group Authenticate user
+  Provider->User: Request credentials
+  User->Provider: Supply credentials
+end
+
+User->Client: Return authorization code
+
+Client->Provider: Send authorization code, code verifier; request access token
+
+Provider->Client: Confirm matching hash, return access token
+
+Client->Resource: Request resource with access token
+
+
+@enduml

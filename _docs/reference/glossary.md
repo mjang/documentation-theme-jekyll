@@ -22,6 +22,9 @@ A client application that requests access to a protected resource on the resourc
 #### Authorization Server
 The server that authenticates the Resource Owner, and issues access tokens to apps.
 
+#### Native App
+An application installed on a device, such as a "smart phone". Distinct from a web app that runs in a browser.
+
 #### OAuth 2.0
 [OAuth 2.0](https://tools.ietf.org/html/rfc6749) is a *delegation* protocol for conveying *authorization* decisions across a network of web-enabled applications and APIs.
 
@@ -42,6 +45,9 @@ SAML (Security Assertion Markup Language) is not supported by the ForgeRock Iden
 
 #### Scope
 A scope is a set of (OAuth 2.0) rights to a protected resource, associated with an access token. Clients can request scopes for access to a protected resource. The Authorization Server can allow or deny such requests. For more information on the scopes that you can configure for the ForgeRock Identity Cloud, see the following page: [Scopes]({{ site.baseurl }}/reference/scopes).
+
+#### Single-Page App (SPA)
+An app that runs entirely in the browser. Also known as a browser-based app. 
 
 #### Team Member
 A ForgeRock administration console user.

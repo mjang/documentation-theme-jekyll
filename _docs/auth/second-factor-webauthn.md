@@ -88,6 +88,6 @@ To incorporate second factor with web authentication, add the following code sni
 > Second factor authentication also has risks, such as when passwords are compromised, as well as for SMS/email delivery. But the combination of factors reduces the risk to user data.
 <br>
 
-If you're familiar with OAuth 2 specifications, the Web App is the _Relying Party_, and FRaaS Express Edition is the _Authorization (or Identity) Server_.
+If you're familiar with OpenID Connect (OIDC) specifications, the Web App is the _Relying Party_, and the ForgeRock Identity Cloud is the _Authorization Server_.
 
 For more information, see the following seciton of the AM Authentication and Single Sign-On Guide: [About Multi-Factor Authentication]({{ site.am_release_version }}/authentication-guide/#about-mfa).
