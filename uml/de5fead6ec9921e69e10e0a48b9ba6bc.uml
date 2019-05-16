@@ -1,0 +1,23 @@
+@startuml
+
+title Service (M2M) Apps and Client Credentials
+
+autonumber
+
+participant "Client" as Client
+participant "CIAM Express" as AuthzServer
+participant "Resource Server" as ResourceServer
+
+Client->AuthzServer: Verify identity, request access token
+
+AuthzServer->Client: Verify credentials, return access token
+
+Client->ResourceServer: Request resource with access token
+
+ResourceServer->AuthzServer: Verify valid access token
+
+AuthzServer->ResourceServer: Response
+
+ResourceServer->Client: Return requested resource
+
+@enduml
