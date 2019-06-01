@@ -1,5 +1,5 @@
 ---
-title: "Getting started with CIAM Express"
+title: "Getting Started with CIAM Express"
 keywords: sample homepage
 tags: [getting_started]
 sidebar: mydoc_sidebar
@@ -26,9 +26,10 @@ We want your feedback so we can include more of the functionality that you need.
 - You'll have direct access to product and engineering.
 - You can provide feedback from within the app through the Intercom icon in the lower-right corner of the app.
 
+{% include serviceList.html %}
+
 ### Notes
 
-<<<<<<< HEAD
 {% include note.html content="This is my note." %}
 
 {% include tip.html content="This is my tip." %}

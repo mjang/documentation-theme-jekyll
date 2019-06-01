@@ -1,0 +1,17 @@
+---
+extends: substitution
+message: Use %s instead of “%s”
+level: error
+ignorecase: true
+# Use 'sign-in' (noun) or 'sign in' (verb).
+pos: 'sign-in/VB|sign/NN in/\w+|sign-in/\w+'
+swap:
+  login: "“sign-in”"
+  logins: "“sign-ins”"
+  log in: "“sign in”"
+  logs in: "“signs in”"
+  log-in: "“sign-in”"
+  log into: "“sign in to”"
+  logs them into: "“signs them in to”"
+  sign into: "“sign in to”"
+  login process: "“sign-in process”"

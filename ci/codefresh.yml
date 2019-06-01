@@ -1,0 +1,14 @@
+version: '1.0'
+steps:
+  build_site:
+    description: Build static site content
+    image: jekyll/jekyll
+    commands:
+      - chmod 0777 -R .
+      - jekyll build --verbose
+  check_links:
+    description: Check for broken links
+    image: 18fgsa/html-proofer
+    cmd:
+      - --empty-alt-ignore
+      - ./_site
